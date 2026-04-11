@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Growbrow.ai Platform</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        whatsapp: '#25D366',
+                        dark: '#0F172A',
+                        grayTxt: '#64748B',
+                        btnPrimary: '#22C55E',
+                        btnPrimaryHov: '#16A34A',
+                        btnSecBorder: '#D1D5DB',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Back to Home -->
+    <a href="index.html" class="absolute top-6 left-6 flex items-center gap-2 text-slate-500 hover:text-dark font-medium transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Website
+    </a>
+
+    <div class="w-full max-w-[1000px] bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden relative">
+        
+        <!-- Left Side (Banner) -->
+        <div class="hidden md:flex md:w-[45%] bg-gradient-to-br from-[#1EBE57] to-[#075E54] p-12 flex-col justify-between relative overflow-hidden">
+            <!-- Decorative Blobs -->
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-white opacity-10 blur-[50px] rounded-full"></div>
+            <div class="absolute -bottom-10 -right-10 w-60 h-60 bg-black opacity-10 blur-[50px] rounded-full"></div>
+
+            <div class="relative z-10">
+                <div class="flex items-center gap-2 mb-12">
+                    <div class="w-8 h-8 flex items-center justify-center bg-white rounded-lg text-whatsapp">
+                        <i data-lucide="message-circle" class="w-[18px] h-[18px] fill-current"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tight text-white">GROWBROW.AI</span>
+                </div>
+                
+                <h2 class="text-3xl font-bold text-white mb-6 leading-tight max-w-[250px]">Manage your growth actively.</h2>
+                <p class="text-white/80 font-medium leading-relaxed max-w-[280px]">
+                    Access your unified WhatsApp workspace to build drip campaigns, send broadcasts, and manage active chats immediately.
+                </p>
+            </div>
+            
+            <div class="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-xl">
+                <div class="flex gap-1 text-yellow-400 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-white text-[13px] font-medium opacity-90 italic">"The simplest WhatsApp API integration tool out there. Our team handles 10x volumes smoothly."</p>
+            </div>
+        </div>
+
+        <!-- Right Side (Form) -->
+        <div class="w-full md:w-[55%] p-10 lg:p-14 flex flex-col justify-center bg-white">
+            <h3 class="text-[26px] font-black text-dark mb-2">Welcome back</h3>
+            <p class="text-[15px] text-grayTxt mb-8 font-medium">Log in to your dashboard account</p>
+
+            <button class="w-full bg-white border border-slate-200 text-dark font-semibold py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors shadow-sm mb-6">
+                <!-- Simple SVG for Google -->
+                <svg viewBox="0 0 24 24" class="w-5 h-5"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                Continue with Google
+            </button>
+
+            <div class="flex items-center gap-4 mb-6">
+                <div class="h-[1px] bg-slate-200 flex-grow"></div>
+                <span class="text-[12px] font-bold text-slate-400 uppercase tracking-widest">Or email</span>
+                <div class="h-[1px] bg-slate-200 flex-grow"></div>
+            </div>
+
+            <form action="#" class="flex flex-col gap-5">
+                <div>
+                    <label class="block text-[13px] font-bold text-dark mb-2">Work Email</label>
+                    <input type="email" placeholder="name@company.com" class="w-full border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-btnPrimary focus:ring-1 focus:ring-btnPrimary transition-all text-[15px]">
+                </div>
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <label class="block text-[13px] font-bold text-dark">Password</label>
+                        <a href="#" class="text-[13px] font-bold text-btnPrimary hover:underline">Forgot password?</a>
+                    </div>
+                    <input type="password" placeholder="••••••••" class="w-full border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-btnPrimary focus:ring-1 focus:ring-btnPrimary transition-all text-[15px]">
+                </div>
+                
+                <button type="button" class="w-full bg-btnPrimary hover:bg-btnPrimaryHov text-white font-bold py-3.5 rounded-xl transition-colors mt-2">
+                    Log in
+                </button>
+            </form>
+
+            <p class="text-center text-[14px] text-grayTxt mt-8 font-medium">
+                Don't have an account? <a href="#" class="font-bold text-btnPrimary hover:underline">Start for FREE</a>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Init icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
