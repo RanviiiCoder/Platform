@@ -122,6 +122,92 @@
     <!-- Init icons -->
     <script>
         lucide.createIcons();
+
+        // Chatbot Logic
+        const chatInput = document.getElementById('chat-input');
+        const chatSend = document.getElementById('chat-send');
+        const chatMessages = document.getElementById('chat-messages');
+
+        const botKnowledge = [
+            { triggers: ["price", "cost", "pricing"], reply: "Our pricing starts completely FREE for the first 14 days! After that, it's just $29/mo for unlimited access. You can check our <a href='pricing.html' class='text-blue-500 underline'>Pricing Page</a> for more info." },
+            { triggers: ["demo", "video", "call", "meet"], reply: "I can help you schedule a live demo with our experts right now. Just click the 'Join Live Demo' button in the main menu!" },
+            { triggers: ["api", "integrate", "integration", "webhook", "connect"], reply: "We offer seamless officially supported WhatsApp APIs with integrations for Shopify, Razorpay, WebEngage, and generic Webhooks!" },
+            { triggers: ["hello", "hi", "hey", "help", "support"], reply: "Hello there! How can I assist you with WhatsApp marketing today?" },
+            { triggers: ["features", "feature", "what does this do", "product"], reply: "Our platform offers WhatsApp Broadcasting, AI Ads Manager, Chatbots, Payments natively in chat, and Forms! Check out our <a href='features-overview.html' class='text-blue-500 underline'>Features page</a>." },
+        ];
+
+        function addMessage(text, isUser = false) {
+            const wrapper = document.createElement('div');
+            wrapper.className = `flex items-start gap-2 max-w-[90%] ${isUser ? 'ml-auto flex-row-reverse' : ''} mb-3 fade-up visible`;
+            
+            let iconHtml = '';
+            if(!isUser) {
+                iconHtml = `
+                <div class="w-7 h-7 rounded-full bg-whatsapp text-white flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                    <i data-lucide="bot" class="w-3.5 h-3.5"></i>
+                </div>`;
+            }
+
+            const bubbleHtml = `
+                <div class="${isUser ? 'bg-whatsapp text-white' : 'bg-white border text-dark'} border-slate-100 p-3 rounded-2xl ${isUser ? 'rounded-tr-sm' : 'rounded-tl-sm'} shadow-sm">
+                    <p class="text-[13px] leading-relaxed">${text}</p>
+                </div>
+            `;
+
+            wrapper.innerHTML = iconHtml + bubbleHtml;
+            chatMessages.appendChild(wrapper);
+            lucide.createIcons();
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function getBotResponse(input) {
+            const lowerInput = input.toLowerCase();
+            let found = botKnowledge.find(k => k.triggers.some(t => lowerInput.includes(t)));
+            return found ? found.reply : "That's a great question! For detailed assistance, I recommend booking a live demo or signing up for our 14-day free trial.";
+        }
+
+        function handleSend() {
+            const text = chatInput.value.trim();
+            if(!text) return;
+
+            // user msg
+            addMessage(text, true);
+            chatInput.value = '';
+
+            // typing indicator
+            const typingWrapper = document.createElement('div');
+            typingWrapper.id = 'typing-indicator';
+            typingWrapper.className = `flex items-start gap-2 max-w-[90%] mb-3`;
+            typingWrapper.innerHTML = `
+                <div class="w-7 h-7 rounded-full bg-whatsapp text-white flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                    <i data-lucide="bot" class="w-3.5 h-3.5"></i>
+                </div>
+                <div class="bg-white border border-slate-100 px-4 py-3.5 rounded-2xl rounded-tl-sm shadow-sm flex gap-1 items-center h-[42px]">
+                    <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"></div>
+                    <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce text-[10px]" style="animation-delay: 0.15s"></div>
+                    <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce text-[10px]" style="animation-delay: 0.3s"></div>
+                </div>
+            `;
+            chatMessages.appendChild(typingWrapper);
+            lucide.createIcons();
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            setTimeout(() => {
+                const indicator = document.getElementById('typing-indicator');
+                if(indicator) indicator.remove();
+                addMessage(getBotResponse(text), false);
+            }, 800 + Math.random() * 800); // 0.8-1.6s delay
+        }
+
+        if(chatSend) {
+            chatSend.addEventListener('click', handleSend);
+        }
+        if(chatInput) {
+            chatInput.addEventListener('keypress', (e) => {
+                if(e.key === 'Enter') handleSend();
+            });
+        }
     </script>
 </body>
+
 </html>

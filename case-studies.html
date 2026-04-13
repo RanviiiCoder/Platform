@@ -798,25 +798,29 @@
             </div>
 
             <!-- Content Area -->
-            <div class="p-4 flex-grow bg-[#F8FAFC] relative">
-                <!-- Floating Preview Card -->
-                <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-4 -mt-12 relative z-10 mb-4 cursor-pointer hover:shadow-md transition-all">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-[10px] uppercase font-bold tracking-wider">News</span>
-                        <span class="text-[11px] text-slate-400 font-medium">Just now</span>
+            <div class="p-4 flex-grow bg-[#F8FAFC] relative flex flex-col h-[380px]">
+                
+                <!-- Chat Messages Container -->
+                <div id="chat-messages" class="flex-grow overflow-y-auto mb-4 flex flex-col gap-3 pr-2 scroll-smooth custom-scrollbar relative z-10 -mt-8 pt-4">
+                    <!-- Initial Welcome Message -->
+                    <div class="flex items-start gap-2 max-w-[90%]">
+                        <div class="w-7 h-7 rounded-full bg-whatsapp text-white flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                            <i data-lucide="bot" class="w-4 h-4"></i>
+                        </div>
+                        <div class="bg-white border border-slate-100 p-3 rounded-2xl rounded-tl-sm shadow-sm">
+                            <p class="text-[13px] text-dark leading-relaxed">Hi! 👋 Welcome to Platform. I'm AI. How can I help you grow your business today?</p>
+                        </div>
                     </div>
-                    <h4 class="text-[14px] font-bold text-dark leading-tight mb-1.5">Template Message Journey is now live 🚀</h4>
-                    <p class="text-[12px] text-grayTxt leading-snug">Automate entire drip campaigns via WhatsApp API easily.</p>
                 </div>
 
                 <!-- Input area -->
-                <div class="bg-white rounded-xl shadow-sm border border-slate-100 flex items-center justify-between mb-3 mt-4 overflow-hidden">
-                    <input type="text" placeholder="Ask a question..." class="flex-grow bg-transparent border-none text-[13px] px-4 py-3 focus:ring-0 outline-none text-dark placeholder:text-slate-400">
-                    <button class="w-[38px] h-[38px] rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center hover:bg-whatsapp hover:text-white transition-colors cursor-pointer shrink-0 mr-1.5">
-                        <i data-lucide="send" class="w-[18px] h-[18px]"></i>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-between shrink-0 overflow-hidden relative z-20">
+                    <input type="text" id="chat-input" placeholder="Type a message..." class="flex-grow bg-transparent border-none text-[13px] px-4 py-3.5 focus:ring-0 outline-none text-dark placeholder:text-slate-400">
+                    <button id="chat-send" class="w-[38px] h-[38px] rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center hover:bg-whatsapp hover:text-white transition-colors cursor-pointer shrink-0 mr-1.5 focus:outline-none">
+                        <i data-lucide="send" class="w-[16px] h-[16px]"></i>
                     </button>
                 </div>
-                <p class="text-center text-[10.5px] text-slate-400 font-medium pb-1">AI agent team can help.</p>
+                <p class="text-center text-[10px] text-slate-400 font-medium pt-2 shrink-0">Bot replies instantly.</p>
             </div>
 
             <!-- Footer Nav -->
@@ -1149,6 +1153,92 @@
             });
         }
 
+
+        // Chatbot Logic
+        const chatInput = document.getElementById('chat-input');
+        const chatSend = document.getElementById('chat-send');
+        const chatMessages = document.getElementById('chat-messages');
+
+        const botKnowledge = [
+            { triggers: ["price", "cost", "pricing"], reply: "Our pricing starts completely FREE for the first 14 days! After that, it's just $29/mo for unlimited access. You can check our <a href='pricing.html' class='text-blue-500 underline'>Pricing Page</a> for more info." },
+            { triggers: ["demo", "video", "call", "meet"], reply: "I can help you schedule a live demo with our experts right now. Just click the 'Join Live Demo' button in the main menu!" },
+            { triggers: ["api", "integrate", "integration", "webhook", "connect"], reply: "We offer seamless officially supported WhatsApp APIs with integrations for Shopify, Razorpay, WebEngage, and generic Webhooks!" },
+            { triggers: ["hello", "hi", "hey", "help", "support"], reply: "Hello there! How can I assist you with WhatsApp marketing today?" },
+            { triggers: ["features", "feature", "what does this do", "product"], reply: "Our platform offers WhatsApp Broadcasting, AI Ads Manager, Chatbots, Payments natively in chat, and Forms! Check out our <a href='features-overview.html' class='text-blue-500 underline'>Features page</a>." },
+        ];
+
+        function addMessage(text, isUser = false) {
+            const wrapper = document.createElement('div');
+            wrapper.className = `flex items-start gap-2 max-w-[90%] ${isUser ? 'ml-auto flex-row-reverse' : ''} mb-3 fade-up visible`;
+            
+            let iconHtml = '';
+            if(!isUser) {
+                iconHtml = `
+                <div class="w-7 h-7 rounded-full bg-whatsapp text-white flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                    <i data-lucide="bot" class="w-3.5 h-3.5"></i>
+                </div>`;
+            }
+
+            const bubbleHtml = `
+                <div class="${isUser ? 'bg-whatsapp text-white' : 'bg-white border text-dark'} border-slate-100 p-3 rounded-2xl ${isUser ? 'rounded-tr-sm' : 'rounded-tl-sm'} shadow-sm">
+                    <p class="text-[13px] leading-relaxed">${text}</p>
+                </div>
+            `;
+
+            wrapper.innerHTML = iconHtml + bubbleHtml;
+            chatMessages.appendChild(wrapper);
+            lucide.createIcons();
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function getBotResponse(input) {
+            const lowerInput = input.toLowerCase();
+            let found = botKnowledge.find(k => k.triggers.some(t => lowerInput.includes(t)));
+            return found ? found.reply : "That's a great question! For detailed assistance, I recommend booking a live demo or signing up for our 14-day free trial.";
+        }
+
+        function handleSend() {
+            const text = chatInput.value.trim();
+            if(!text) return;
+
+            // user msg
+            addMessage(text, true);
+            chatInput.value = '';
+
+            // typing indicator
+            const typingWrapper = document.createElement('div');
+            typingWrapper.id = 'typing-indicator';
+            typingWrapper.className = `flex items-start gap-2 max-w-[90%] mb-3`;
+            typingWrapper.innerHTML = `
+                <div class="w-7 h-7 rounded-full bg-whatsapp text-white flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                    <i data-lucide="bot" class="w-3.5 h-3.5"></i>
+                </div>
+                <div class="bg-white border border-slate-100 px-4 py-3.5 rounded-2xl rounded-tl-sm shadow-sm flex gap-1 items-center h-[42px]">
+                    <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"></div>
+                    <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce text-[10px]" style="animation-delay: 0.15s"></div>
+                    <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce text-[10px]" style="animation-delay: 0.3s"></div>
+                </div>
+            `;
+            chatMessages.appendChild(typingWrapper);
+            lucide.createIcons();
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            setTimeout(() => {
+                const indicator = document.getElementById('typing-indicator');
+                if(indicator) indicator.remove();
+                addMessage(getBotResponse(text), false);
+            }, 800 + Math.random() * 800); // 0.8-1.6s delay
+        }
+
+        if(chatSend) {
+            chatSend.addEventListener('click', handleSend);
+        }
+        if(chatInput) {
+            chatInput.addEventListener('keypress', (e) => {
+                if(e.key === 'Enter') handleSend();
+            });
+        }
     </script>
 </body>
+
 </html>
