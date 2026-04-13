@@ -1271,6 +1271,47 @@
                 class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start 14-Day
                 FREE Trial <i data-lucide="arrow-right" stroke-width="1.5" class="w-[18px] h-[18px] text-white"></i></a>
         </div>
+
+        <!-- Infinite Logo Slider -->
+        <style>
+            @keyframes marquee {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-marquee {
+                animation: marquee 35s linear infinite;
+            }
+        </style>
+        <div class="mt-20 overflow-hidden w-full relative h-[60px] flex items-center bg-transparent drop-shadow-sm">
+            <!-- Fade masks -->
+            <div class="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-lightBg to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-lightBg to-transparent z-10 pointer-events-none"></div>
+
+            <div class="flex animate-marquee w-max hover:[animation-play-state:paused] items-center">
+                <!-- Group 1 -->
+                <div class="flex items-center justify-around min-w-full gap-24 px-12">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Amazon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" class="h-5 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Samsung">
+                    <div class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer whitespace-nowrap"><span class="font-black text-[22px] tracking-tight text-dark">NUCLEUS</span> <span class="font-medium text-[22px] tracking-tight text-slate-500">SOFTWARE</span></div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" class="h-5 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Meta">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" class="h-6 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Microsoft">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" class="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Spotify">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="h-7 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Netflix">
+                </div>
+                <!-- Group 2 (Duplicate for infinite effect) -->
+                <div class="flex items-center justify-around min-w-full gap-24 px-12">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Amazon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" class="h-5 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Samsung">
+                    <div class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer whitespace-nowrap"><span class="font-black text-[22px] tracking-tight text-dark">NUCLEUS</span> <span class="font-medium text-[22px] tracking-tight text-slate-500">SOFTWARE</span></div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" class="h-5 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Meta">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" class="h-6 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Microsoft">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" class="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Spotify">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="h-7 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Netflix">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- 8. Footer -->
