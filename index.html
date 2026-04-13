@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp Business Platform | High-Converting SaaS</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                                        colors: {
+                    colors: {
                         whatsapp: '#25D366',
                         whatsappHover: '#1EBE57',
                         whatsappDark: '#075E54',
@@ -47,9 +49,9 @@
             }
         }
     </script>
-    
+
     <style type="text/tailwindcss">
-        
+
         @layer components {
             .btn {
                 @apply inline-flex items-center justify-center transition-colors duration-150 w-full sm:w-auto outline-none cursor-pointer;
@@ -109,72 +111,150 @@
         }
     </style>
 </head>
+
 <body class="antialiased selection:bg-whatsapp/20 selection:text-whatsappDark">
 
     <!-- Navbar -->
-        <!-- Navbar -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 top-0 border-b border-transparent bg-white/95 backdrop-blur-md h-[70px] flex items-center shadow-sm">
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 top-0 border-b border-transparent bg-white/95 backdrop-blur-md h-[70px] flex items-center shadow-sm">
         <div class="w-full max-w-[1200px] mx-auto px-[20px] flex items-center justify-between h-full">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2 group shrink-0">
-                <div class="w-9 h-9 border-[2px] border-whatsapp rounded-full flex items-center justify-center p-1 bg-white">
+                <div
+                    class="w-9 h-9 border-[2px] border-whatsapp rounded-full flex items-center justify-center p-1 bg-white">
                     <i data-lucide="message-circle" class="w-[18px] h-[18px] text-whatsapp fill-whatsapp"></i>
                 </div>
-                <span class="text-xl font-black tracking-tight text-dark">Platform<span class="text-whatsapp">.</span></span>
+                <span class="text-xl font-black tracking-tight text-dark">Platform<span
+                        class="text-whatsapp">.</span></span>
             </a>
 
             <!-- Desktop Links -->
             <div class="hidden lg:flex items-center gap-7 h-full ml-8">
-                <a href="pricing.html" class="text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full flex items-center cursor-pointer">Pricing</a>
-                
+                <a href="pricing.html"
+                    class="text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full flex items-center cursor-pointer">Pricing</a>
+
                 <!-- 1. PRODUCT DROPDOWN -->
                 <div class="group/nav relative h-full flex items-center">
-                    <button class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
-                        Product <i data-lucide="chevron-down" class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
+                    <button
+                        class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
+                        Product <i data-lucide="chevron-down"
+                            class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
                     </button>
                     <!-- Panel -->
-                    <div class="absolute top-[100%] left-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
+                    <div
+                        class="absolute top-[100%] left-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
                         <div class="absolute -top-6 left-0 w-full h-6"></div> <!-- Bridge -->
                         <div class="flex flex-col max-h-[70vh] overflow-y-auto">
-                            <a href="whatsapp-marketing.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="megaphone" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Marketing</h4><p class="text-[12px] text-grayTxt leading-tight">Broadcast, Automate & Grow</p></div>
+                            <a href="whatsapp-marketing.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="megaphone" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Marketing</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Broadcast, Automate & Grow</p>
+                                </div>
                             </a>
-                            <a href="ai-ads.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="mouse-pointer-click" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">AI Ads Manager</h4><p class="text-[12px] text-grayTxt leading-tight">5X your leads</p></div>
+                            <a href="ai-ads.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="mouse-pointer-click" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">AI Ads Manager</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">5X your leads</p>
+                                </div>
                             </a>
-                            <a href="whatsapp-chatbots.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="bot" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Chatbots</h4><p class="text-[12px] text-grayTxt leading-tight">Automate conversations</p></div>
+                            <a href="whatsapp-chatbots.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="bot" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Chatbots</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Automate conversations</p>
+                                </div>
                             </a>
-                            <a href="ai-whatsapp-chatbot.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="brain-circuit" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">AI WhatsApp Chatbot</h4><p class="text-[12px] text-grayTxt leading-tight">Fully AI automation</p></div>
+                            <a href="ai-whatsapp-chatbot.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="brain-circuit" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">AI WhatsApp Chatbot</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Fully AI automation</p>
+                                </div>
                             </a>
-                            <a href="payments.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="credit-card" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Payments</h4><p class="text-[12px] text-grayTxt leading-tight">Collect payments in chat</p></div>
+                            <a href="payments.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="credit-card" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Payments</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Collect payments in chat</p>
+                                </div>
                             </a>
-                            <a href="forms.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="form-input" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Forms</h4><p class="text-[12px] text-grayTxt leading-tight">Capture leads natively</p></div>
+                            <a href="forms.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="form-input" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Forms</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Capture leads natively</p>
+                                </div>
                             </a>
-                            <a href="whatsapp-link-qr.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="link" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Link & QR</h4><p class="text-[12px] text-grayTxt leading-tight">Generate links & QR</p></div>
+                            <a href="whatsapp-link-qr.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="link" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Link & QR</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Generate links & QR</p>
+                                </div>
                             </a>
-                            <a href="whatsapp-blue-tick.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="check-badge" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Blue Tick</h4><p class="text-[12px] text-grayTxt leading-tight">Get verified badge</p></div>
+                            <a href="whatsapp-blue-tick.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="check-badge" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Blue Tick</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Get verified badge</p>
+                                </div>
                             </a>
-                            <a href="showroom-kit.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="store" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Showroom Kit</h4><p class="text-[12px] text-grayTxt leading-tight">Offline QR setup</p></div>
+                            <a href="showroom-kit.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="store" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Showroom Kit</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Offline QR setup</p>
+                                </div>
                             </a>
-                            <a href="aipersy.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="sparkles" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">AiPersy</h4><p class="text-[12px] text-grayTxt leading-tight">Hire AI employees</p></div>
+                            <a href="aipersy.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="sparkles" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">AiPersy</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Hire AI employees</p>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -182,53 +262,126 @@
 
                 <!-- 2. FEATURES DROPDOWN -->
                 <div class="group/nav relative h-full flex items-center">
-                    <button class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
-                        Features <i data-lucide="chevron-down" class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
+                    <button
+                        class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
+                        Features <i data-lucide="chevron-down"
+                            class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
                     </button>
                     <!-- Panel -->
-                    <div class="absolute top-[100%] left-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
+                    <div
+                        class="absolute top-[100%] left-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
                         <div class="absolute -top-6 left-0 w-full h-6"></div> <!-- Bridge -->
                         <div class="flex flex-col max-h-[70vh] overflow-y-auto">
-                            <a href="features-overview.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="star" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Features</h4><p class="text-[12px] text-grayTxt leading-tight">Explore all powerful features</p></div>
+                            <a href="features-overview.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="star" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Features</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Explore all powerful features</p>
+                                </div>
                             </a>
                             <div class="h-[1px] bg-slate-100 my-1 mx-2"></div>
-                            <a href="whatsapp-broadcasting.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer border-t border-slate-100">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="send" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Broadcasting</h4><p class="text-[12px] text-grayTxt leading-tight">Retargeting, CRM & more</p></div>
+                            <a href="whatsapp-broadcasting.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer border-t border-slate-100">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="send" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Broadcasting</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Retargeting, CRM & more</p>
+                                </div>
                             </a>
-                            <a href="ai-whatsapp-chatbot.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="brain" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">AI WhatsApp Chatbot</h4><p class="text-[12px] text-grayTxt leading-tight">Automate anything with AI</p></div>
+                            <a href="ai-whatsapp-chatbot.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="brain" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">AI WhatsApp Chatbot</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Automate anything with AI</p>
+                                </div>
                             </a>
-                            <a href="ads-manager.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="trending-up" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Ads Manager</h4><p class="text-[12px] text-grayTxt leading-tight">3X your leads</p></div>
+                            <a href="ads-manager.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="trending-up" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Ads Manager</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">3X your leads</p>
+                                </div>
                             </a>
-                            <a href="whatsapp-chatbots.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="message-square" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Chatbots</h4><p class="text-[12px] text-grayTxt leading-tight">Drag & drop flow builder</p></div>
+                            <a href="whatsapp-chatbots.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="message-square" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Chatbots</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Drag & drop flow builder</p>
+                                </div>
                             </a>
-                            <a href="whatsapp-catalog.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="shopping-bag" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Catalog</h4><p class="text-[12px] text-grayTxt leading-tight">Sell products in chat</p></div>
+                            <a href="whatsapp-catalog.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="shopping-bag" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Catalog</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Sell products in chat</p>
+                                </div>
                             </a>
-                            <a href="payments.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="indian-rupee" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Payments</h4><p class="text-[12px] text-grayTxt leading-tight">Collect via UPI & cards</p></div>
+                            <a href="payments.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="indian-rupee" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Payments</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Collect via UPI & cards</p>
+                                </div>
                             </a>
-                            <a href="forms.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="clipboard-list" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Forms</h4><p class="text-[12px] text-grayTxt leading-tight">Native data collection</p></div>
+                            <a href="forms.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="clipboard-list" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Forms</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Native data collection</p>
+                                </div>
                             </a>
-                            <a href="whatsapp-webviews.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="globe" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Webviews</h4><p class="text-[12px] text-grayTxt leading-tight">Web inside WhatsApp</p></div>
+                            <a href="whatsapp-webviews.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="globe" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WhatsApp Webviews</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Web inside WhatsApp</p>
+                                </div>
                             </a>
-                            <a href="click-tracking.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="crosshair" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Click Tracking</h4><p class="text-[12px] text-grayTxt leading-tight">Import, broadcast & track</p></div>
+                            <a href="click-tracking.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="crosshair" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Click Tracking</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Import, broadcast & track</p>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -236,49 +389,116 @@
 
                 <!-- 3. INDUSTRIES DROPDOWN -->
                 <div class="group/nav relative h-full flex items-center">
-                    <button class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
-                        Industries <i data-lucide="chevron-down" class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
+                    <button
+                        class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
+                        Industries <i data-lucide="chevron-down"
+                            class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
                     </button>
                     <!-- Panel -->
-                    <div class="absolute top-[100%] left-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
+                    <div
+                        class="absolute top-[100%] left-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
                         <div class="absolute -top-6 left-0 w-full h-6"></div> <!-- Bridge -->
                         <div class="flex flex-col max-h-[70vh] overflow-y-auto">
-                            <a href="all-industries.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="building-2" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">All Industries</h4><p class="text-[12px] text-grayTxt leading-tight">Industry-wise use cases</p></div>
+                            <a href="all-industries.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="building-2" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">All Industries</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Industry-wise use cases</p>
+                                </div>
                             </a>
                             <div class="h-[1px] bg-slate-100 my-1 mx-2"></div>
-                            <a href="education.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="graduation-cap" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Education</h4><p class="text-[12px] text-grayTxt leading-tight">Edtech, coaches</p></div>
+                            <a href="education.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="graduation-cap" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Education</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Edtech, coaches</p>
+                                </div>
                             </a>
-                            <a href="e-commerce.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="shopping-cart" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">E-commerce</h4><p class="text-[12px] text-grayTxt leading-tight">D2C brands</p></div>
+                            <a href="e-commerce.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="shopping-cart" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">E-commerce</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">D2C brands</p>
+                                </div>
                             </a>
-                            <a href="finance-insurance.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="landmark" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Finance & Insurance</h4><p class="text-[12px] text-grayTxt leading-tight">Fintech & banking</p></div>
+                            <a href="finance-insurance.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="landmark" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Finance & Insurance</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Fintech & banking</p>
+                                </div>
                             </a>
-                            <a href="healthcare.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="stethoscope" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Healthcare</h4><p class="text-[12px] text-grayTxt leading-tight">Appointment booking</p></div>
+                            <a href="healthcare.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="stethoscope" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Healthcare</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Appointment booking</p>
+                                </div>
                             </a>
-                            <a href="automobile.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="car" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Automobile</h4><p class="text-[12px] text-grayTxt leading-tight">Book test drives</p></div>
+                            <a href="automobile.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="car" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Automobile</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Book test drives</p>
+                                </div>
                             </a>
-                            <a href="real-estate.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="home" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Real Estate</h4><p class="text-[12px] text-grayTxt leading-tight">Brokers & developers</p></div>
+                            <a href="real-estate.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="home" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Real Estate</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Brokers & developers</p>
+                                </div>
                             </a>
-                            <a href="it-services-internet.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="monitor" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">IT Services & Internet</h4><p class="text-[12px] text-grayTxt leading-tight">Showcase services</p></div>
+                            <a href="it-services-internet.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="monitor" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">IT Services & Internet
+                                    </h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Showcase services</p>
+                                </div>
                             </a>
-                            <a href="events-webinar.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="calendar" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Events & Webinar</h4><p class="text-[12px] text-grayTxt leading-tight">Boost attendance</p></div>
+                            <a href="events-webinar.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="calendar" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Events & Webinar</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Boost attendance</p>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -286,40 +506,92 @@
 
                 <!-- 4. RESOURCES DROPDOWN -->
                 <div class="group/nav relative h-full flex items-center">
-                    <button class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
-                        Resources <i data-lucide="chevron-down" class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
+                    <button
+                        class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
+                        Resources <i data-lucide="chevron-down"
+                            class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
                     </button>
                     <!-- Panel -->
-                    <div class="absolute top-[100%] left-[50%] -translate-x-[50%] w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
+                    <div
+                        class="absolute top-[100%] left-[50%] -translate-x-[50%] w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
                         <div class="absolute -top-6 left-0 w-full h-6"></div> <!-- Bridge -->
                         <div class="flex flex-col max-h-[70vh] overflow-y-auto">
-                            <a href="help-center.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="help-circle" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Help Center</h4><p class="text-[12px] text-grayTxt leading-tight">FAQs & guides</p></div>
+                            <a href="help-center.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="help-circle" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Help Center</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">FAQs & guides</p>
+                                </div>
                             </a>
-                            <a href="tutorials.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="play-circle" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Tutorials</h4><p class="text-[12px] text-grayTxt leading-tight">Learn platform</p></div>
+                            <a href="tutorials.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="play-circle" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Tutorials</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Learn platform</p>
+                                </div>
                             </a>
-                            <a href="youtube.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="youtube" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">YouTube</h4><p class="text-[12px] text-grayTxt leading-tight">Videos & podcasts</p></div>
+                            <a href="youtube.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="youtube" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">YouTube</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Videos & podcasts</p>
+                                </div>
                             </a>
-                            <a href="template-library.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="library" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Template Library</h4><p class="text-[12px] text-grayTxt leading-tight">Ready templates</p></div>
+                            <a href="template-library.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="library" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Template Library</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Ready templates</p>
+                                </div>
                             </a>
-                            <a href="blog.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="file-text" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Blog</h4><p class="text-[12px] text-grayTxt leading-tight">Updates & stories</p></div>
+                            <a href="blog.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="file-text" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Blog</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Updates & stories</p>
+                                </div>
                             </a>
-                            <a href="developer-apis.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="code" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Developer APIs</h4><p class="text-[12px] text-grayTxt leading-tight">Send templates via API</p></div>
+                            <a href="developer-apis.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="code" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Developer APIs</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Send templates via API</p>
+                                </div>
                             </a>
-                            <a href="case-studies.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="award" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Case Studies</h4><p class="text-[12px] text-grayTxt leading-tight">Growth stories</p></div>
+                            <a href="case-studies.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="award" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Case Studies</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Growth stories</p>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -327,59 +599,127 @@
 
                 <!-- 5. INTEGRATIONS DROPDOWN -->
                 <div class="group/nav relative h-full flex items-center">
-                    <button class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
-                        Integrations <i data-lucide="chevron-down" class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
+                    <button
+                        class="flex items-center gap-1 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full cursor-pointer">
+                        Integrations <i data-lucide="chevron-down"
+                            class="w-[14px] h-[14px] transition-transform group-hover/nav:rotate-180"></i>
                     </button>
                     <!-- Panel -->
-                    <div class="absolute top-[100%] right-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
+                    <div
+                        class="absolute top-[100%] right-0 w-[300px] bg-white rounded-[16px] shadow-floating border border-slate-100 p-2.5 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 translate-y-2 group-hover/nav:translate-y-0 z-50">
                         <div class="absolute -top-6 left-0 w-full h-6"></div> <!-- Bridge -->
                         <div class="flex flex-col max-h-[70vh] overflow-y-auto">
-                            <a href="explore-all-integrations.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="blocks" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Explore all Integrations</h4><p class="text-[12px] text-grayTxt leading-tight">Automate notifications</p></div>
+                            <a href="explore-all-integrations.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="blocks" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Explore all Integrations
+                                    </h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Automate notifications</p>
+                                </div>
                             </a>
                             <div class="h-[1px] bg-slate-100 my-1 mx-2"></div>
-                            <a href="shopify.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="shopping-bag" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Shopify</h4><p class="text-[12px] text-grayTxt leading-tight">Abandoned cart, orders</p></div>
+                            <a href="shopify.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="shopping-bag" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Shopify</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Abandoned cart, orders</p>
+                                </div>
                             </a>
-                            <a href="razorpay.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="credit-card" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Razorpay</h4><p class="text-[12px] text-grayTxt leading-tight">Payment alerts</p></div>
+                            <a href="razorpay.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="credit-card" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Razorpay</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Payment alerts</p>
+                                </div>
                             </a>
-                            <a href="shopify-checkouts.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="shopping-cart" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Shopify Checkouts</h4><p class="text-[12px] text-grayTxt leading-tight">Magic checkout</p></div>
+                            <a href="shopify-checkouts.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="shopping-cart" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Shopify Checkouts</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Magic checkout</p>
+                                </div>
                             </a>
-                            <a href="webengage.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="webhook" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">WebEngage</h4><p class="text-[12px] text-grayTxt leading-tight">Journey automation</p></div>
+                            <a href="webengage.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="webhook" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">WebEngage</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Journey automation</p>
+                                </div>
                             </a>
-                            <a href="leadsquared.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="users" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">LeadSquared</h4><p class="text-[12px] text-grayTxt leading-tight">CRM integration</p></div>
+                            <a href="leadsquared.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="users" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">LeadSquared</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">CRM integration</p>
+                                </div>
                             </a>
-                            <a href="integrately.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="link-2" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Integrately</h4><p class="text-[12px] text-grayTxt leading-tight">Build automations</p></div>
+                            <a href="integrately.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="link-2" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Integrately</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Build automations</p>
+                                </div>
                             </a>
-                            <a href="webhook-apis.html" class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
-                                <div class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i data-lucide="network" class="w-[18px] h-[18px]"></i></div>
-                                <div class="flex flex-col justify-center gap-0.5"><h4 class="font-bold text-dark text-[14px] leading-tight">Webhook APIs</h4><p class="text-[12px] text-grayTxt leading-tight">Backend connection</p></div>
+                            <a href="webhook-apis.html"
+                                class="flex gap-3 hover:bg-green-50 p-2.5 rounded-xl transition-colors group/item cursor-pointer">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
+                                    <i data-lucide="network" class="w-[18px] h-[18px]"></i>
+                                </div>
+                                <div class="flex flex-col justify-center gap-0.5">
+                                    <h4 class="font-bold text-dark text-[14px] leading-tight">Webhook APIs</h4>
+                                    <p class="text-[12px] text-grayTxt leading-tight">Backend connection</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <a href="app.html" class="text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full flex items-center cursor-pointer">App</a>
-                <a href="partner.html" class="text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full flex items-center cursor-pointer">Partner</a>
+                <a href="app.html"
+                    class="text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full flex items-center cursor-pointer">App</a>
+                <a href="partner.html"
+                    class="text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors h-full flex items-center cursor-pointer">Partner</a>
             </div>
 
             <!-- Right Nav -->
             <div class="hidden lg:flex items-center gap-5 shrink-0">
-                <button class="flex items-center gap-1.5 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors cursor-pointer">Eng <i data-lucide="globe" class="w-4 h-4"></i></button>
-                <a href="login.html" class="btn btn-secondary text-[14px] font-[500] px-[16px] py-[10px] rounded-[6px] gap-[6px]">Login <i data-lucide="arrow-right" stroke-width="1.5" class="w-3.5 h-3.5"></i></a>
-                <a href="login.html" class="btn btn-primary text-[14px] font-[600] px-[18px] py-[10px] rounded-[6px] gap-[6px]">Start for FREE <i data-lucide="arrow-right" stroke-width="1.5" class="w-[14px] h-[14px]"></i></a>
+                <button
+                    class="flex items-center gap-1.5 text-[15px] font-semibold text-dark hover:text-whatsapp transition-colors cursor-pointer">Eng
+                    <i data-lucide="globe" class="w-4 h-4"></i></button>
+                <a href="login.html"
+                    class="btn btn-secondary text-[14px] font-[500] px-[16px] py-[10px] rounded-[6px] gap-[6px]">Login
+                    <i data-lucide="arrow-right" stroke-width="1.5" class="w-3.5 h-3.5"></i></a>
+                <a href="login.html"
+                    class="btn btn-primary text-[14px] font-[600] px-[18px] py-[10px] rounded-[6px] gap-[6px]">Start for
+                    FREE <i data-lucide="arrow-right" stroke-width="1.5" class="w-[14px] h-[14px]"></i></a>
             </div>
 
             <!-- Mobile Toggle -->
@@ -389,42 +729,155 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[40] w-full h-[100dvh] overflow-y-auto transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col pt-[70px]">
+        <div class="px-5 py-4 border-b border-slate-100 flex flex-col gap-1">
+            <a href="pricing.html" class="py-3 text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors">Pricing</a>
+            
+            <!-- Mobile Accordion 1 -->
+            <div class="mobile-accordion group">
+                <button class="w-full py-3 flex items-center justify-between text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors accordion-btn outline-none">
+                    Product <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                </button>
+                <div class="accordion-content hidden flex-col pl-4 pb-2 gap-3 mt-1 border-l-2 border-slate-100 ml-2">
+                    <a href="whatsapp-marketing.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Marketing</a>
+                    <a href="ai-ads.html" class="text-[14px] text-grayTxt hover:text-whatsapp">AI Ads Manager</a>
+                    <a href="whatsapp-chatbots.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Chatbots</a>
+                    <a href="ai-whatsapp-chatbot.html" class="text-[14px] text-grayTxt hover:text-whatsapp">AI WhatsApp Chatbot</a>
+                    <a href="payments.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Payments</a>
+                    <a href="forms.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Forms</a>
+                    <a href="whatsapp-link-qr.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Link & QR</a>
+                    <a href="whatsapp-blue-tick.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Blue Tick</a>
+                    <a href="showroom-kit.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Showroom Kit</a>
+                    <a href="aipersy.html" class="text-[14px] text-grayTxt hover:text-whatsapp">AiPersy</a>
+                </div>
+            </div>
+
+            <!-- Mobile Accordion 2 -->
+            <div class="mobile-accordion group">
+                <button class="w-full py-3 flex items-center justify-between text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors accordion-btn outline-none">
+                    Features <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                </button>
+                <div class="accordion-content hidden flex-col pl-4 pb-2 gap-3 mt-1 border-l-2 border-slate-100 ml-2">
+                    <a href="features-overview.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Features Overview</a>
+                    <a href="whatsapp-broadcasting.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Broadcasting</a>
+                    <a href="ads-manager.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Ads Manager</a>
+                    <a href="whatsapp-catalog.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Catalog</a>
+                    <a href="whatsapp-chatbots.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Chatbots</a>
+                    <a href="whatsapp-webviews.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WhatsApp Webviews</a>
+                    <a href="click-tracking.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Click Tracking</a>
+                </div>
+            </div>
+
+            <!-- Mobile Accordion 3 -->
+            <div class="mobile-accordion group">
+                <button class="w-full py-3 flex items-center justify-between text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors accordion-btn outline-none">
+                    Industries <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                </button>
+                <div class="accordion-content hidden flex-col pl-4 pb-2 gap-3 mt-1 border-l-2 border-slate-100 ml-2">
+                    <a href="all-industries.html" class="text-[14px] text-grayTxt hover:text-whatsapp">All Industries</a>
+                    <a href="education.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Education</a>
+                    <a href="e-commerce.html" class="text-[14px] text-grayTxt hover:text-whatsapp">E-commerce</a>
+                    <a href="finance-insurance.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Finance & Insurance</a>
+                    <a href="healthcare.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Healthcare</a>
+                    <a href="automobile.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Automobile</a>
+                    <a href="real-estate.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Real Estate</a>
+                    <a href="it-services-internet.html" class="text-[14px] text-grayTxt hover:text-whatsapp">IT Services & Internet</a>
+                    <a href="events-webinar.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Events & Webinar</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Accordion 4 -->
+            <div class="mobile-accordion group">
+                <button class="w-full py-3 flex items-center justify-between text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors accordion-btn outline-none">
+                    Resources <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                </button>
+                <div class="accordion-content hidden flex-col pl-4 pb-2 gap-3 mt-1 border-l-2 border-slate-100 ml-2">
+                    <a href="help-center.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Help Center</a>
+                    <a href="tutorials.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Tutorials</a>
+                    <a href="youtube.html" class="text-[14px] text-grayTxt hover:text-whatsapp">YouTube</a>
+                    <a href="template-library.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Template Library</a>
+                    <a href="blog.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Blog</a>
+                    <a href="developer-apis.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Developer APIs</a>
+                    <a href="case-studies.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Case Studies</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Accordion 5 -->
+            <div class="mobile-accordion group">
+                <button class="w-full py-3 flex items-center justify-between text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors accordion-btn outline-none">
+                    Integrations <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                </button>
+                <div class="accordion-content hidden flex-col pl-4 pb-2 gap-3 mt-1 border-l-2 border-slate-100 ml-2">
+                    <a href="explore-all-integrations.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Explore all Integrations</a>
+                    <a href="shopify.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Shopify</a>
+                    <a href="razorpay.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Razorpay</a>
+                    <a href="shopify-checkouts.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Shopify Checkouts</a>
+                    <a href="webengage.html" class="text-[14px] text-grayTxt hover:text-whatsapp">WebEngage</a>
+                    <a href="leadsquared.html" class="text-[14px] text-grayTxt hover:text-whatsapp">LeadSquared</a>
+                    <a href="integrately.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Integrately</a>
+                    <a href="webhook-apis.html" class="text-[14px] text-grayTxt hover:text-whatsapp">Webhook APIs</a>
+                </div>
+            </div>
+
+            <a href="app.html" class="py-3 text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors">App</a>
+            <a href="partner.html" class="py-3 text-[16px] font-semibold text-dark hover:text-whatsapp transition-colors">Partner</a>
+        </div>
+        
+        <div class="px-5 py-6 mb-8 mt-auto flex flex-col gap-4 bg-white shrink-0">
+            <a href="login.html" class="btn btn-secondary text-[15px] font-[600] py-[12px] w-full">Login</a>
+            <a href="login.html" class="btn btn-primary text-[15px] font-[600] py-[12px] w-full">Start for FREE</a>
+        </div>
+    </div>
+
+
 
     <!-- 1. Hero Section -->
     <section class="pt-36 pb-20 lg:pt-48 lg:pb-32 relative bg-lightBg overflow-hidden">
         <div class="container-fixed relative z-10 flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
-            
+
             <!-- Left Content -->
             <div class="flex-1 text-center lg:text-left fade-up">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-300 bg-yellow-50 mb-8 mx-auto lg:mx-0 shadow-sm">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-300 bg-yellow-50 mb-8 mx-auto lg:mx-0 shadow-sm">
                     <span class="text-xl">🏆</span>
                     <span class="text-sm font-bold text-yellow-800">Meta Business Partner / Champion Year Award</span>
                 </div>
-                
+
                 <h1 class="heading-large mb-6">
                     Grow Your Revenue with the Power of <span class="text-whatsapp">WhatsApp</span>
                 </h1>
-                
+
                 <p class="text-lg md:text-xl text-grayTxt mb-10 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                    Market, Sell & Support — all in one AI-powered platform powered by official WhatsApp APIs. Scale conversations effortlessly.
+                    Market, Sell & Support — all in one AI-powered platform powered by official WhatsApp APIs. Scale
+                    conversations effortlessly.
                 </p>
-                
+
                 <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-6">
-                    <a href="login.html" class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start 14-Day FREE Trial <i data-lucide="arrow-right" stroke-width="1.5" class="w-[18px] h-[18px] text-white"></i></a>
-                    <button class="btn btn-secondary text-[15px] font-[500] px-[20px] py-[12px] rounded-[8px] gap-[6px] demo-modal-trigger">Join Live Demo <i data-lucide="arrow-right" stroke-width="1.5" class="w-4 h-4"></i></button>
+                    <a href="login.html"
+                        class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start
+                        14-Day FREE Trial <i data-lucide="arrow-right" stroke-width="1.5"
+                            class="w-[18px] h-[18px] text-white"></i></a>
+                    <button
+                        class="btn btn-secondary text-[15px] font-[500] px-[20px] py-[12px] rounded-[8px] gap-[6px] demo-modal-trigger">Join
+                        Live Demo <i data-lucide="arrow-right" stroke-width="1.5" class="w-4 h-4"></i></button>
                 </div>
                 <p class="text-sm font-semibold text-slate-500 flex items-center justify-center lg:justify-start gap-2">
-                    <i data-lucide="shield-check" class="text-whatsapp w-4 h-4"></i> No credit card required. Cancel anytime.
+                    <i data-lucide="shield-check" class="text-whatsapp w-4 h-4"></i> No credit card required. Cancel
+                    anytime.
                 </p>
             </div>
 
             <!-- Right Visual Mockup -->
             <div class="flex-1 relative w-full max-w-[500px] mx-auto fade-up delay-100">
                 <!-- Abstract Blob -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[120%] bg-whatsapp/15 blur-[100px] rounded-full z-0"></div>
-                
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[120%] bg-whatsapp/15 blur-[100px] rounded-full z-0">
+                </div>
+
                 <!-- Floating Elements -->
-                <div class="absolute top-20 -left-12 bg-white rounded-2xl shadow-floating p-4 z-20 flex items-center gap-3 animate-bounce" style="animation-duration: 3s">
+                <div class="absolute top-20 -left-12 bg-white rounded-2xl shadow-floating p-4 z-20 flex items-center gap-3 animate-bounce"
+                    style="animation-duration: 3s">
                     <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-2xl">🚀</div>
                     <div>
                         <div class="text-sm font-black text-dark tracking-tight">10X ROAS</div>
@@ -432,9 +885,11 @@
                     </div>
                 </div>
 
-                <div class="absolute bottom-32 -right-8 bg-white rounded-2xl shadow-floating p-4 z-20 flex items-center gap-3 animate-bounce" style="animation-duration: 4s; animation-delay: 1s">
+                <div class="absolute bottom-32 -right-8 bg-white rounded-2xl shadow-floating p-4 z-20 flex items-center gap-3 animate-bounce"
+                    style="animation-duration: 4s; animation-delay: 1s">
                     <div class="relative">
-                        <div class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white"></div>
+                        <div class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white">
+                        </div>
                         <i data-lucide="bell" class="w-8 h-8 text-dark"></i>
                     </div>
                     <div>
@@ -444,48 +899,68 @@
                 </div>
 
                 <!-- Phone Box -->
-                <div class="relative z-10 bg-white rounded-[2.5rem] border-[8px] border-slate-100 shadow-floating h-[650px] flex flex-col overflow-hidden">
+                <div
+                    class="relative z-10 bg-white rounded-[2.5rem] border-[8px] border-slate-100 shadow-floating h-[650px] flex flex-col overflow-hidden">
                     <!-- Top Bar -->
                     <div class="bg-[#075E54] pt-8 pb-3 px-4 flex items-center gap-3 text-white">
                         <i data-lucide="arrow-left" class="w-5 h-5"></i>
                         <div class="w-10 h-10 rounded-full bg-white/20 p-1 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=100&q=80" class="w-full h-full rounded-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=100&q=80"
+                                class="w-full h-full rounded-full object-cover">
                         </div>
                         <div class="leading-tight">
-                            <div class="font-bold flex items-center gap-1.5">Luxe Perfumes <i data-lucide="check-circle" class="w-3.5 h-3.5 fill-whatsapp text-white"></i></div>
+                            <div class="font-bold flex items-center gap-1.5">Luxe Perfumes <i data-lucide="check-circle"
+                                    class="w-3.5 h-3.5 fill-whatsapp text-white"></i></div>
                             <div class="text-xs opacity-90">Official Business Account</div>
                         </div>
                     </div>
-                    
+
                     <!-- Chat Area -->
                     <div class="flex-grow chat-bg p-4 flex flex-col gap-4 overflow-hidden relative">
                         <!-- Date pill -->
-                        <div class="bg-[#E1F2FB] text-slate-700 text-[11px] font-bold px-3 py-1 rounded-lg self-center shadow-sm">Today</div>
-                        
+                        <div
+                            class="bg-[#E1F2FB] text-slate-700 text-[11px] font-bold px-3 py-1 rounded-lg self-center shadow-sm">
+                            Today</div>
+
                         <!-- Business Broadcast -->
-                        <div class="bg-white rounded-2xl rounded-tl-none p-2 shadow-sm max-w-[85%] self-start border border-slate-100 mt-2">
-                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-2">
+                        <div
+                            class="bg-white rounded-2xl rounded-tl-none p-2 shadow-sm max-w-[85%] self-start border border-slate-100 mt-2">
+                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80"
+                                class="w-full h-40 object-cover rounded-xl mb-2">
                             <div class="px-2 pb-1">
-                                <p class="text-[13px] text-dark font-medium leading-relaxed mb-2">Exclusive Festive Offer 🎉<br>Get Flat 50% OFF on our Signature Collection.</p>
+                                <p class="text-[13px] text-dark font-medium leading-relaxed mb-2">Exclusive Festive
+                                    Offer 🎉<br>Get Flat 50% OFF on our Signature Collection.</p>
                                 <p class="text-[11px] text-grayTxt font-medium mb-3">Offer valid till midnight.</p>
                                 <div class="flex flex-col gap-1.5 border-t border-slate-100 pt-2">
-                                    <button class="w-full py-2 bg-blue-50 text-[#00A5F4] font-bold text-[13px] rounded-lg">Buy Now</button>
-                                    <button class="w-full py-2 bg-slate-50 text-dark font-bold text-[13px] rounded-lg">View Catalog</button>
+                                    <button
+                                        class="w-full py-2 bg-blue-50 text-[#00A5F4] font-bold text-[13px] rounded-lg">Buy
+                                        Now</button>
+                                    <button
+                                        class="w-full py-2 bg-slate-50 text-dark font-bold text-[13px] rounded-lg">View
+                                        Catalog</button>
                                 </div>
                             </div>
                         </div>
 
                         <!-- User Reply -->
-                        <div class="bg-[#D9FDD3] rounded-2xl rounded-tr-none p-3 shadow-sm max-w-[70%] self-end border border-whatsapp/20 mt-2">
-                            <p class="text-[13px] text-dark font-medium">I want to order the Floral Mist. Can I pay via UPI?</p>
-                            <p class="text-[10px] text-grayTxt text-right mt-1">10:42 AM <i data-lucide="check-check" class="inline w-3 h-3 text-blue-500"></i></p>
+                        <div
+                            class="bg-[#D9FDD3] rounded-2xl rounded-tr-none p-3 shadow-sm max-w-[70%] self-end border border-whatsapp/20 mt-2">
+                            <p class="text-[13px] text-dark font-medium">I want to order the Floral Mist. Can I pay via
+                                UPI?</p>
+                            <p class="text-[10px] text-grayTxt text-right mt-1">10:42 AM <i data-lucide="check-check"
+                                    class="inline w-3 h-3 text-blue-500"></i></p>
                         </div>
                     </div>
                     <!-- Input Area -->
                     <div class="bg-[#F0F2F5] p-3 flex items-center gap-3">
                         <i data-lucide="plus" class="text-grayTxt w-6 h-6"></i>
-                        <div class="flex-grow bg-white rounded-full py-2 px-4 shadow-sm text-sm text-grayTxt font-medium">Message</div>
-                        <div class="w-10 h-10 rounded-full bg-[#00A884] items-center justify-center flex text-white shadow-sm shrink-0"><i data-lucide="mic" class="w-5 h-5"></i></div>
+                        <div
+                            class="flex-grow bg-white rounded-full py-2 px-4 shadow-sm text-sm text-grayTxt font-medium">
+                            Message</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-[#00A884] items-center justify-center flex text-white shadow-sm shrink-0">
+                            <i data-lucide="mic" class="w-5 h-5"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -497,34 +972,53 @@
         <div class="container-fixed fade-up">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="heading-medium mb-4">Broadcast Promotional Messages on WhatsApp (Officially)</h2>
-                <p class="text-lg text-grayTxt font-medium">Enjoy limitless broadcasting with zero risk of number blocking using official API.</p>
+                <p class="text-lg text-grayTxt font-medium">Enjoy limitless broadcasting with zero risk of number
+                    blocking using official API.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
-                    <div class="w-14 h-14 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6"><i data-lucide="image" class="w-7 h-7"></i></div>
+                <div
+                    class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6"><i
+                            data-lucide="image" class="w-7 h-7"></i></div>
                     <h3 class="text-lg font-bold text-dark mb-3">Rich Media Formats</h3>
-                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Send offers, coupons, videos, and dynamic carousels that users love to click.</p>
+                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Send offers, coupons, videos, and
+                        dynamic carousels that users love to click.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
-                    <div class="w-14 h-14 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center mb-6"><i data-lucide="mouse-pointer-click" class="w-7 h-7"></i></div>
+                <div
+                    class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center mb-6">
+                        <i data-lucide="mouse-pointer-click" class="w-7 h-7"></i>
+                    </div>
                     <h3 class="text-lg font-bold text-dark mb-3">Interactive CTA Buttons</h3>
-                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Increase conversions by 3X using quick replies and direct URL CTA buttons.</p>
+                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Increase conversions by 3X using quick
+                        replies and direct URL CTA buttons.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
-                    <div class="w-14 h-14 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6"><i data-lucide="calendar-clock" class="w-7 h-7"></i></div>
+                <div
+                    class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6">
+                        <i data-lucide="calendar-clock" class="w-7 h-7"></i>
+                    </div>
                     <h3 class="text-lg font-bold text-dark mb-3">Smart Scheduling</h3>
-                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Schedule your festival marketing campaigns up to 2 months in advance flawlessly.</p>
+                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Schedule your festival marketing
+                        campaigns up to 2 months in advance flawlessly.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
-                    <div class="w-14 h-14 rounded-xl bg-red-50 text-red-600 flex items-center justify-center mb-6"><i data-lucide="workflow" class="w-7 h-7"></i></div>
+                <div
+                    class="bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:-translate-y-2 transition-transform">
+                    <div class="w-14 h-14 rounded-xl bg-red-50 text-red-600 flex items-center justify-center mb-6"><i
+                            data-lucide="workflow" class="w-7 h-7"></i></div>
                     <h3 class="text-lg font-bold text-dark mb-3">Automation Flows</h3>
-                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Trigger automated drip campaigns based on user actions and tags seamlessly.</p>
+                    <p class="text-sm text-grayTxt font-medium leading-relaxed">Trigger automated drip campaigns based
+                        on user actions and tags seamlessly.</p>
                 </div>
             </div>
 
             <div class="text-center">
-                <a href="login.html" class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start for FREE <i data-lucide="arrow-right" stroke-width="2" class="w-4 h-4"></i></a>
+                <a href="login.html"
+                    class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start for
+                    FREE <i data-lucide="arrow-right" stroke-width="2" class="w-4 h-4"></i></a>
             </div>
         </div>
     </section>
@@ -533,51 +1027,73 @@
     <section class="py-24 bg-lightBg border-y border-slate-100">
         <div class="container-fixed">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-24">
-                
+
                 <!-- Ads Section -->
                 <div class="flex flex-col justify-center fade-up">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-100 text-blue-700 font-bold text-xs uppercase tracking-widest mb-6 w-max">Acquisition AI</div>
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-100 text-blue-700 font-bold text-xs uppercase tracking-widest mb-6 w-max">
+                        Acquisition AI</div>
                     <h2 class="heading-medium mb-6">Run Ads that Click to WhatsApp</h2>
                     <ul class="space-y-6 mb-10">
                         <li class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-1"><i data-lucide="trending-up" class="w-4 h-4"></i></div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-1">
+                                <i data-lucide="trending-up" class="w-4 h-4"></i>
+                            </div>
                             <div>
                                 <h4 class="text-lg font-bold text-dark mb-1">5X more leads</h4>
-                                <p class="text-sm text-grayTxt font-medium">Bypass website friction completely by landing users directly in their chat app.</p>
+                                <p class="text-sm text-grayTxt font-medium">Bypass website friction completely by
+                                    landing users directly in their chat app.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-1"><i data-lucide="cpu" class="w-4 h-4"></i></div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-1">
+                                <i data-lucide="cpu" class="w-4 h-4"></i>
+                            </div>
                             <div>
                                 <h4 class="text-lg font-bold text-dark mb-1">AI Optimization</h4>
-                                <p class="text-sm text-grayTxt font-medium">Automatically retarget users who initiate a chat but don't convert.</p>
+                                <p class="text-sm text-grayTxt font-medium">Automatically retarget users who initiate a
+                                    chat but don't convert.</p>
                             </div>
                         </li>
                     </ul>
-                    <a href="ai-ads.html" class="btn btn-ghost text-blue-600 hover:text-blue-700 px-0">Explore AI Ads <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+                    <a href="ai-ads.html" class="btn btn-ghost text-blue-600 hover:text-blue-700 px-0">Explore AI Ads <i
+                            data-lucide="arrow-right" class="w-5 h-5"></i></a>
                 </div>
 
                 <!-- Forms Section -->
                 <div class="flex flex-col justify-center fade-up">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-purple-100 text-purple-700 font-bold text-xs uppercase tracking-widest mb-6 w-max">Engagement AI</div>
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded bg-purple-100 text-purple-700 font-bold text-xs uppercase tracking-widest mb-6 w-max">
+                        Engagement AI</div>
                     <h2 class="heading-medium mb-6">Build WhatsApp Forms</h2>
                     <ul class="space-y-6 mb-10">
                         <li class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 mt-1"><i data-lucide="zap" class="w-4 h-4"></i></div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 mt-1">
+                                <i data-lucide="zap" class="w-4 h-4"></i>
+                            </div>
                             <div>
                                 <h4 class="text-lg font-bold text-dark mb-1">Capture leads instantly</h4>
-                                <p class="text-sm text-grayTxt font-medium">Native form filling inside WhatsApp ensures zero drop-offs and accurate data.</p>
+                                <p class="text-sm text-grayTxt font-medium">Native form filling inside WhatsApp ensures
+                                    zero drop-offs and accurate data.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 mt-1"><i data-lucide="database" class="w-4 h-4"></i></div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 mt-1">
+                                <i data-lucide="database" class="w-4 h-4"></i>
+                            </div>
                             <div>
                                 <h4 class="text-lg font-bold text-dark mb-1">Collect user insights</h4>
-                                <p class="text-sm text-grayTxt font-medium">Sync form submissions instantly to HubSpot, Salesforce, or Google Sheets.</p>
+                                <p class="text-sm text-grayTxt font-medium">Sync form submissions instantly to HubSpot,
+                                    Salesforce, or Google Sheets.</p>
                             </div>
                         </li>
                     </ul>
-                    <a href="forms.html" class="btn btn-ghost text-purple-600 hover:text-purple-700 px-0">Explore Forms <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+                    <a href="forms.html" class="btn btn-ghost text-purple-600 hover:text-purple-700 px-0">Explore Forms
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
                 </div>
 
             </div>
@@ -587,13 +1103,16 @@
     <!-- 4. Payments Section -->
     <section class="py-24">
         <div class="container-fixed fade-up text-center lg:text-left flex flex-col lg:flex-row items-center gap-16">
-            
+
             <div class="flex-1">
                 <h2 class="heading-medium mb-6">Collect Payments Seamlessly on WhatsApp</h2>
                 <p class="text-lg text-grayTxt font-medium mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                    Never lose a customer at checkout. Enable users to browse products and complete transactions via WhatsApp Pay, Razorpay, or PayU without leaving the app.
+                    Never lose a customer at checkout. Enable users to browse products and complete transactions via
+                    WhatsApp Pay, Razorpay, or PayU without leaving the app.
                 </p>
-                <a href="payments.html" class="btn btn-secondary text-[15px] font-[500] px-[20px] py-[12px] rounded-[8px] gap-[6px]">Explore Payments <i data-lucide="arrow-right" stroke-width="1.5" class="w-4 h-4"></i></a>
+                <a href="payments.html"
+                    class="btn btn-secondary text-[15px] font-[500] px-[20px] py-[12px] rounded-[8px] gap-[6px]">Explore
+                    Payments <i data-lucide="arrow-right" stroke-width="1.5" class="w-4 h-4"></i></a>
             </div>
 
             <!-- Payment Mockup Visual -->
@@ -601,7 +1120,10 @@
                 <div class="absolute -inset-10 bg-green-100 blur-[80px] rounded-full z-0 pointer-events-none"></div>
                 <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-floating relative z-10 mx-auto">
                     <div class="text-center pb-4 border-b border-slate-100 mb-4">
-                        <div class="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center mx-auto mb-3 shadow-inner"><i data-lucide="shopping-bag" class="w-8 h-8 text-whatsapp"></i></div>
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center mx-auto mb-3 shadow-inner">
+                            <i data-lucide="shopping-bag" class="w-8 h-8 text-whatsapp"></i>
+                        </div>
                         <h4 class="font-bold text-dark text-lg">Order Summary</h4>
                         <p class="text-xs text-grayTxt font-medium">Luxe Perfume Pack x1</p>
                     </div>
@@ -609,8 +1131,12 @@
                         <span>Total</span>
                         <span>₹2,499</span>
                     </div>
-                    <button class="w-full bg-[#00A5F4] text-white font-bold py-3.5 rounded-xl mb-3 flex justify-center items-center gap-2 hover:opacity-90"><i data-lucide="credit-card"></i> Pay via UPI</button>
-                    <button class="w-full bg-slate-100 text-dark font-bold py-3.5 rounded-xl flex justify-center items-center hover:bg-slate-200">Other Methods</button>
+                    <button
+                        class="w-full bg-[#00A5F4] text-white font-bold py-3.5 rounded-xl mb-3 flex justify-center items-center gap-2 hover:opacity-90"><i
+                            data-lucide="credit-card"></i> Pay via UPI</button>
+                    <button
+                        class="w-full bg-slate-100 text-dark font-bold py-3.5 rounded-xl flex justify-center items-center hover:bg-slate-200">Other
+                        Methods</button>
                 </div>
             </div>
         </div>
@@ -620,18 +1146,24 @@
     <section class="py-24 bg-lightBg border-y border-slate-100">
         <div class="container-fixed fade-up">
             <h2 class="heading-medium text-center mb-16">Customers love us! 😊</h2>
-            
+
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
                     <div class="mb-8">
                         <div class="flex gap-1 text-yellow-400 mb-5">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-dark font-medium leading-relaxed italic text-[15px]">"The platform cut our support response time from hours to minutes. Generating leads via WhatsApp is now our #1 acquisition channel."</p>
+                        <p class="text-dark font-medium leading-relaxed italic text-[15px]">"The platform cut our
+                            support response time from hours to minutes. Generating leads via WhatsApp is now our #1
+                            acquisition channel."</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="https://ui-avatars.com/api/?name=Rohan+V&background=random" class="w-12 h-12 rounded-full shadow-sm">
+                        <img src="https://ui-avatars.com/api/?name=Rohan+V&background=random"
+                            class="w-12 h-12 rounded-full shadow-sm">
                         <div>
                             <div class="font-bold text-dark text-sm">Rohan V.</div>
                             <div class="text-xs text-grayTxt font-medium">Founder, Edulink</div>
@@ -639,15 +1171,21 @@
                     </div>
                 </div>
                 <!-- Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
                     <div class="mb-8">
                         <div class="flex gap-1 text-yellow-400 mb-5">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-dark font-medium leading-relaxed italic text-[15px]">"We launched our complete ecommerce showroom on WhatsApp. The integration with Shopify is flawless and ROI is incredible."</p>
+                        <p class="text-dark font-medium leading-relaxed italic text-[15px]">"We launched our complete
+                            ecommerce showroom on WhatsApp. The integration with Shopify is flawless and ROI is
+                            incredible."</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="https://ui-avatars.com/api/?name=Priya+M&background=random" class="w-12 h-12 rounded-full shadow-sm">
+                        <img src="https://ui-avatars.com/api/?name=Priya+M&background=random"
+                            class="w-12 h-12 rounded-full shadow-sm">
                         <div>
                             <div class="font-bold text-dark text-sm">Priya M.</div>
                             <div class="text-xs text-grayTxt font-medium">Head of D2C, GlowSkin</div>
@@ -655,15 +1193,21 @@
                     </div>
                 </div>
                 <!-- Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col justify-between">
                     <div class="mb-8">
                         <div class="flex gap-1 text-yellow-400 mb-5">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-dark font-medium leading-relaxed italic text-[15px]">"Switching to this platform was the best decision. The UI is incredibly clean, and the broadcast analytics let us optimize instantly."</p>
+                        <p class="text-dark font-medium leading-relaxed italic text-[15px]">"Switching to this platform
+                            was the best decision. The UI is incredibly clean, and the broadcast analytics let us
+                            optimize instantly."</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="https://ui-avatars.com/api/?name=Kunal+A&background=random" class="w-12 h-12 rounded-full shadow-sm">
+                        <img src="https://ui-avatars.com/api/?name=Kunal+A&background=random"
+                            class="w-12 h-12 rounded-full shadow-sm">
                         <div>
                             <div class="font-bold text-dark text-sm">Kunal A.</div>
                             <div class="text-xs text-grayTxt font-medium">VP Growth, UrbanMart</div>
@@ -679,24 +1223,35 @@
         <div class="container-fixed fade-up">
             <div class="bg-dark rounded-[2.5rem] p-10 lg:p-16 relative overflow-hidden shadow-floating">
                 <!-- Abstract tech lines -->
-                <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
-                
+                <div
+                    class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay">
+                </div>
+
                 <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
                     <div class="flex-1">
-                        <h2 class="text-3xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">Get WhatsApp Business API in 10 Minutes</h2>
-                        
+                        <h2 class="text-3xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">Get WhatsApp
+                            Business API in 10 Minutes</h2>
+
                         <div class="grid sm:grid-cols-2 gap-y-4 gap-x-8 mb-10 text-white/90 font-medium">
-                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-whatsapp"></i> Official API access</div>
-                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-whatsapp"></i> Green Tick verification</div>
-                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-whatsapp"></i> Unlimited notifications</div>
-                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-whatsapp"></i> Dedicated support</div>
-                            <div class="flex items-center gap-3 col-span-full"><i data-lucide="check-circle-2" class="text-whatsapp"></i> Fast feature releases & 99.9% API uptime</div>
+                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                                    class="text-whatsapp"></i> Official API access</div>
+                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                                    class="text-whatsapp"></i> Green Tick verification</div>
+                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                                    class="text-whatsapp"></i> Unlimited notifications</div>
+                            <div class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                                    class="text-whatsapp"></i> Dedicated support</div>
+                            <div class="flex items-center gap-3 col-span-full"><i data-lucide="check-circle-2"
+                                    class="text-whatsapp"></i> Fast feature releases & 99.9% API uptime</div>
                         </div>
-                        
-                        <a href="login.html" class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start for FREE <i data-lucide="arrow-right" stroke-width="2" class="w-4 h-4"></i></a>
+
+                        <a href="login.html"
+                            class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start
+                            for FREE <i data-lucide="arrow-right" stroke-width="2" class="w-4 h-4"></i></a>
                     </div>
-                    
-                    <div class="hidden lg:block w-72 h-72 rounded-full border-[16px] border-whatsapp/20 relative flex items-center justify-center shadow-[0_0_100px_rgba(37,211,102,0.2)]">
+
+                    <div
+                        class="hidden lg:block w-72 h-72 rounded-full border-[16px] border-whatsapp/20 relative flex items-center justify-center shadow-[0_0_100px_rgba(37,211,102,0.2)]">
                         <i data-lucide="server" class="w-24 h-24 text-whatsapp"></i>
                         <!-- Orbiting dots -->
                         <div class="absolute w-4 h-4 bg-white rounded-full -top-2 left-1/2"></div>
@@ -710,8 +1265,11 @@
     <!-- 7. Final CTA Strip -->
     <section class="py-24 bg-lightBg border-y border-slate-100 text-center">
         <div class="container-fixed fade-up">
-            <h2 class="heading-large mb-8">Start growing your business <br class="hidden md:block">on WhatsApp today</h2>
-            <a href="login.html" class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start 14-Day FREE Trial <i data-lucide="arrow-right" stroke-width="1.5" class="w-[18px] h-[18px] text-white"></i></a>
+            <h2 class="heading-large mb-8">Start growing your business <br class="hidden md:block">on WhatsApp today
+            </h2>
+            <a href="login.html"
+                class="btn btn-primary text-[15px] font-[600] px-[22px] py-[12px] rounded-[8px] gap-[6px]">Start 14-Day
+                FREE Trial <i data-lucide="arrow-right" stroke-width="1.5" class="w-[18px] h-[18px] text-white"></i></a>
         </div>
     </section>
 
@@ -719,7 +1277,7 @@
     <footer class="bg-dark text-white pt-24 pb-12">
         <div class="container-fixed">
             <div class="grid grid-cols-2 lg:grid-cols-5 gap-12 gap-y-16 mb-20 text-sm font-medium">
-                
+
                 <!-- Brand Col -->
                 <div class="col-span-2 lg:col-span-1">
                     <a href="platform.html" class="flex items-center gap-2 mb-6">
@@ -728,13 +1286,22 @@
                         </div>
                         <span class="text-xl font-black tracking-tight text-white">Platform.</span>
                     </a>
-                    <p class="text-slate-400 mb-6 leading-relaxed">The high-converting conversational platform for modern businesses.</p>
-                    
+                    <p class="text-slate-400 mb-6 leading-relaxed">The high-converting conversational platform for
+                        modern businesses.</p>
+
                     <div class="flex gap-4">
-                        <a href="features.html" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
-                        <a href="features.html" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
-                        <a href="features.html" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i class="fa-brands fa-linkedin-in text-lg"></i></a>
-                        <a href="features.html" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i class="fa-brands fa-youtube text-lg"></i></a>
+                        <a href="features.html"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i
+                                class="fa-brands fa-instagram text-lg"></i></a>
+                        <a href="features.html"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i
+                                class="fa-brands fa-twitter text-lg"></i></a>
+                        <a href="features.html"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i
+                                class="fa-brands fa-linkedin-in text-lg"></i></a>
+                        <a href="features.html"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-whatsapp transition-colors"><i
+                                class="fa-brands fa-youtube text-lg"></i></a>
                     </div>
                 </div>
 
@@ -742,9 +1309,11 @@
                 <div class="lg:ml-auto">
                     <h4 class="text-white font-bold mb-6 text-base tracking-wide">Platform</h4>
                     <ul class="space-y-4 text-slate-400">
-                        <li><a href="features-overview.html" class="hover:text-whatsapp transition-colors">Features</a></li>
+                        <li><a href="features-overview.html" class="hover:text-whatsapp transition-colors">Features</a>
+                        </li>
                         <li><a href="pricing.html" class="hover:text-whatsapp transition-colors">Pricing</a></li>
-                        <li><a href="whatsapp-marketing.html" class="hover:text-whatsapp transition-colors">WhatsApp Marketing</a></li>
+                        <li><a href="whatsapp-marketing.html" class="hover:text-whatsapp transition-colors">WhatsApp
+                                Marketing</a></li>
                         <li><a href="chatbots.html" class="hover:text-whatsapp transition-colors">Chatbots</a></li>
                     </ul>
                 </div>
@@ -760,17 +1329,23 @@
                 <div class="lg:ml-auto">
                     <h4 class="text-white font-bold mb-6 text-base tracking-wide">Free Tools</h4>
                     <ul class="space-y-4 text-slate-400">
-                        <li><a href="whatsapp-link-generator.html" class="hover:text-whatsapp transition-colors">WhatsApp Link Generator</a></li>
-                        <li><a href="qr-code-generator.html" class="hover:text-whatsapp transition-colors">QR Code Generator</a></li>
-                        <li><a href="roi-calculator.html" class="hover:text-whatsapp transition-colors">ROI Calculator</a></li>
+                        <li><a href="whatsapp-link-generator.html"
+                                class="hover:text-whatsapp transition-colors">WhatsApp Link Generator</a></li>
+                        <li><a href="qr-code-generator.html" class="hover:text-whatsapp transition-colors">QR Code
+                                Generator</a></li>
+                        <li><a href="roi-calculator.html" class="hover:text-whatsapp transition-colors">ROI
+                                Calculator</a></li>
                     </ul>
                 </div>
                 <div class="lg:ml-auto">
                     <h4 class="text-white font-bold mb-6 text-base tracking-wide">Legal</h4>
                     <ul class="space-y-4 text-slate-400">
-                        <li><a href="privacy-policy.html" class="hover:text-whatsapp transition-colors">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html" class="hover:text-whatsapp transition-colors">Terms of Service</a></li>
-                        <li><a href="refund-policy.html" class="hover:text-whatsapp transition-colors">Refund Policy</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-whatsapp transition-colors">Privacy
+                                Policy</a></li>
+                        <li><a href="terms-of-service.html" class="hover:text-whatsapp transition-colors">Terms of
+                                Service</a></li>
+                        <li><a href="refund-policy.html" class="hover:text-whatsapp transition-colors">Refund Policy</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -781,151 +1356,215 @@
         </div>
     </footer>
 
-    
+
     <!-- Live Demo Modal Backdrop -->
-    <div id="demo-modal-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[200] opacity-0 invisible transition-all duration-300 flex items-center justify-center p-4">
+    <div id="demo-modal-backdrop"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[200] opacity-0 invisible transition-all duration-300 flex items-center justify-center p-4">
         <!-- Modal Box -->
-        <div id="demo-modal-box" class="bg-white rounded-[16px] w-full max-w-[850px] shadow-2xl flex flex-col md:flex-row overflow-hidden scale-95 opacity-0 transition-all duration-300 origin-center relative">
-            
+        <div id="demo-modal-box"
+            class="bg-white rounded-[16px] w-full max-w-[850px] shadow-2xl flex flex-col md:flex-row overflow-hidden scale-95 opacity-0 transition-all duration-300 origin-center relative">
+
             <!-- Close Button -->
-            <button id="close-demo-modal" class="absolute top-4 right-4 text-slate-400 hover:text-dark z-30 transition-colors bg-white/50 rounded-full p-1 backdrop-blur-md cursor-pointer">
+            <button id="close-demo-modal"
+                class="absolute top-4 right-4 text-slate-400 hover:text-dark z-30 transition-colors bg-white/50 rounded-full p-1 backdrop-blur-md cursor-pointer">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
 
             <!-- Step 1 Wrapper -->
             <div id="demo-step-1" class="flex flex-col md:flex-row w-full transition-all duration-300">
                 <!-- Left Side (Info) -->
-                <div class="bg-[#F8FAFC] w-full md:w-[45%] p-10 lg:p-12 border-r border-slate-100 flex flex-col justify-center relative overflow-hidden">
-                <!-- Abstract blob -->
-                <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-100 blur-[50px] rounded-full z-0"></div>
-                <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-whatsapp/10 blur-[50px] rounded-full z-0"></div>
-
-                <div class="relative z-10">
-                    <div class="flex items-center gap-2 mb-8 group">
-                        <div class="w-8 h-8 flex items-center justify-center bg-whatsapp rounded-lg text-white">
-                            <i data-lucide="message-circle" class="w-[18px] h-[18px] fill-current"></i>
-                        </div>
-                        <span class="text-xl font-black tracking-tight text-dark">Platform<span class="text-whatsapp">.</span></span>
+                <div
+                    class="bg-[#F8FAFC] w-full md:w-[45%] p-10 lg:p-12 border-r border-slate-100 flex flex-col justify-center relative overflow-hidden">
+                    <!-- Abstract blob -->
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-100 blur-[50px] rounded-full z-0"></div>
+                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-whatsapp/10 blur-[50px] rounded-full z-0">
                     </div>
 
-                    <h2 class="text-[26px] font-bold text-dark mb-4 leading-tight">Live Demo Call</h2>
-                    <p class="text-grayTxt text-[15px] leading-relaxed font-medium mb-8">
-                        Get a complete walkthrough of the platform. Learn how to blast messages, automate support, and trigger AI-driven campaigns natively.
-                    </p>
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                        <p class="text-[14px] font-bold text-dark flex items-center gap-2"><i data-lucide="languages" class="w-4 h-4 text-whatsapp"></i> हिंदी में डेमो के लिए</p>
-                        <p class="text-[13px] text-grayTxt font-medium mt-1.5 leading-snug">हमारे विशेषज्ञ आपको आपके व्यवसाय को बढ़ाने के तरीके हिंदी में समझाएंगे।</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Side (Action) -->
-            <div class="w-full md:w-[55%] p-10 lg:p-12 flex flex-col justify-center">
-                <h3 class="text-[22px] font-bold text-dark mb-8">Select preferred language</h3>
-                
-                <!-- Custom Dropdown Wrapper -->
-                <div class="relative mb-8" id="language-dropdown-wrapper">
-                    <button id="language-dropdown-btn" class="w-full bg-white border-2 border-slate-200 rounded-xl px-5 py-4 flex items-center justify-between text-left hover:border-whatsapp transition-colors focus:outline-none focus:border-whatsapp cursor-pointer">
-                        <div>
-                            <div class="font-bold text-dark text-[16px] mb-0.5" id="selected-lang-title">English</div>
-                            <div class="text-[13px] text-grayTxt font-medium" id="selected-lang-time">(Mon-Sat, 4 PM IST)</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-2 mb-8 group">
+                            <div class="w-8 h-8 flex items-center justify-center bg-whatsapp rounded-lg text-white">
+                                <i data-lucide="message-circle" class="w-[18px] h-[18px] fill-current"></i>
+                            </div>
+                            <span class="text-xl font-black tracking-tight text-dark">Platform<span
+                                    class="text-whatsapp">.</span></span>
                         </div>
-                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300" id="lang-dropdown-icon"></i>
-                    </button>
 
-                    <!-- Dropdown List -->
-                    <div id="language-options" class="absolute top-full left-0 w-full bg-white border border-slate-100 rounded-xl shadow-floating mt-2 py-2 opacity-0 invisible translate-y-2 transition-all duration-200 z-20">
-                        <div class="pt-1 pb-1">
-                            <button class="w-full text-left px-5 py-3 hover:bg-slate-50 transition-colors lang-option cursor-pointer" data-title="English" data-time="(Mon-Sat, 4 PM IST)">
-                                <div class="font-bold text-dark text-[15px] mb-0.5">English</div>
-                                <div class="text-[12px] text-grayTxt font-medium opacity-80">(Mon-Sat, 4 PM IST)</div>
-                            </button>
-                            <button class="w-full text-left px-5 py-3 hover:bg-slate-50 transition-colors lang-option cursor-pointer" data-title="Hindi" data-time="(Mon-Sat, 12 PM IST)">
-                                <div class="font-bold text-dark text-[15px] mb-0.5">Hindi</div>
-                                <div class="text-[12px] text-grayTxt font-medium opacity-80">(Mon-Sat, 12 PM IST)</div>
-                            </button>
+                        <h2 class="text-[26px] font-bold text-dark mb-4 leading-tight">Live Demo Call</h2>
+                        <p class="text-grayTxt text-[15px] leading-relaxed font-medium mb-8">
+                            Get a complete walkthrough of the platform. Learn how to blast messages, automate support,
+                            and trigger AI-driven campaigns natively.
+                        </p>
+                        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                            <p class="text-[14px] font-bold text-dark flex items-center gap-2"><i
+                                    data-lucide="languages" class="w-4 h-4 text-whatsapp"></i> हिंदी में डेमो के लिए</p>
+                            <p class="text-[13px] text-grayTxt font-medium mt-1.5 leading-snug">हमारे विशेषज्ञ आपको आपके
+                                व्यवसाय को बढ़ाने के तरीके हिंदी में समझाएंगे।</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-auto">
-                    <button id="demo-step-1-submit" class="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold text-lg py-4 rounded-xl shadow-[0_4px_14px_rgba(59,130,246,0.3)] hover:shadow-[0_6px_20px_rgba(59,130,246,0.4)] transition-all cursor-pointer">
-                        Submit
-                    </button>
+                <!-- Right Side (Action) -->
+                <div class="w-full md:w-[55%] p-10 lg:p-12 flex flex-col justify-center">
+                    <h3 class="text-[22px] font-bold text-dark mb-8">Select preferred language</h3>
+
+                    <!-- Custom Dropdown Wrapper -->
+                    <div class="relative mb-8" id="language-dropdown-wrapper">
+                        <button id="language-dropdown-btn"
+                            class="w-full bg-white border-2 border-slate-200 rounded-xl px-5 py-4 flex items-center justify-between text-left hover:border-whatsapp transition-colors focus:outline-none focus:border-whatsapp cursor-pointer">
+                            <div>
+                                <div class="font-bold text-dark text-[16px] mb-0.5" id="selected-lang-title">English
+                                </div>
+                                <div class="text-[13px] text-grayTxt font-medium" id="selected-lang-time">(Mon-Sat, 4 PM
+                                    IST)</div>
+                            </div>
+                            <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300"
+                                id="lang-dropdown-icon"></i>
+                        </button>
+
+                        <!-- Dropdown List -->
+                        <div id="language-options"
+                            class="absolute top-full left-0 w-full bg-white border border-slate-100 rounded-xl shadow-floating mt-2 py-2 opacity-0 invisible translate-y-2 transition-all duration-200 z-20">
+                            <div class="pt-1 pb-1">
+                                <button
+                                    class="w-full text-left px-5 py-3 hover:bg-slate-50 transition-colors lang-option cursor-pointer"
+                                    data-title="English" data-time="(Mon-Sat, 4 PM IST)">
+                                    <div class="font-bold text-dark text-[15px] mb-0.5">English</div>
+                                    <div class="text-[12px] text-grayTxt font-medium opacity-80">(Mon-Sat, 4 PM IST)
+                                    </div>
+                                </button>
+                                <button
+                                    class="w-full text-left px-5 py-3 hover:bg-slate-50 transition-colors lang-option cursor-pointer"
+                                    data-title="Hindi" data-time="(Mon-Sat, 12 PM IST)">
+                                    <div class="font-bold text-dark text-[15px] mb-0.5">Hindi</div>
+                                    <div class="text-[12px] text-grayTxt font-medium opacity-80">(Mon-Sat, 12 PM IST)
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-auto">
+                        <button id="demo-step-1-submit"
+                            class="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold text-lg py-4 rounded-xl shadow-[0_4px_14px_rgba(59,130,246,0.3)] hover:shadow-[0_6px_20px_rgba(59,130,246,0.4)] transition-all cursor-pointer">
+                            Submit
+                        </button>
+                    </div>
                 </div>
-            </div>
             </div> <!-- End Step 1 -->
 
             <!-- Step 2 (Calendar) -->
-            <div id="demo-step-2" class="flex flex-col md:flex-row w-full hidden opacity-0 transition-opacity duration-300">
+            <div id="demo-step-2"
+                class="flex flex-col md:flex-row w-full hidden opacity-0 transition-opacity duration-300">
                 <!-- Left Side (Info) -->
-                <div class="bg-white w-full md:w-[35%] py-10 px-8 border-r border-slate-100 flex flex-col justify-start relative">
+                <div
+                    class="bg-white w-full md:w-[35%] py-10 px-8 border-r border-slate-100 flex flex-col justify-start relative">
                     <div class="flex items-center gap-2 mb-8 group">
                         <div class="w-8 h-8 flex items-center justify-center bg-whatsapp rounded-lg text-white">
                             <i data-lucide="message-circle" class="w-[18px] h-[18px] fill-current"></i>
                         </div>
-                        <span class="text-xl font-black tracking-tight text-dark">Platform<span class="text-whatsapp">.</span></span>
+                        <span class="text-xl font-black tracking-tight text-dark">Platform<span
+                                class="text-whatsapp">.</span></span>
                     </div>
-                    
+
                     <div class="mb-4">
                         <h2 class="text-[20px] font-bold text-dark mb-1">AiSensy Demo Meeting</h2>
                         <div class="flex items-center gap-2 text-slate-500 font-bold text-[14px]">
                             <i data-lucide="clock" class="w-4 h-4"></i> 1 hr
                         </div>
                     </div>
-                    
+
                     <p class="text-grayTxt text-[14px] leading-relaxed font-medium">
-                        Get a complete walkthrough of the platform. Learn how to blast messages, automate support, and trigger AI-driven campaigns natively.
+                        Get a complete walkthrough of the platform. Learn how to blast messages, automate support, and
+                        trigger AI-driven campaigns natively.
                     </p>
                 </div>
 
                 <!-- Right Side (Calendar) -->
                 <div class="w-full md:w-[65%] py-10 px-8 flex flex-col justify-start">
                     <h3 class="text-[20px] font-bold text-dark mb-8">Select a Date & Time</h3>
-                    
+
                     <div class="flex items-start gap-6 lg:gap-8 w-full h-full relative" id="calendar-flex-wrapper">
                         <!-- Left Calendar View -->
-                        <div id="calendar-container" class="transition-all duration-300 w-full flex flex-col min-w-[250px]">
+                        <div id="calendar-container"
+                            class="transition-all duration-300 w-full flex flex-col min-w-[250px]">
                             <!-- Calendar Header -->
                             <div class="flex items-center justify-between mb-6">
                                 <h4 class="font-bold text-dark text-[15px]">April 2026</h4>
                                 <div class="flex items-center gap-2">
-                                    <button class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-blue-50 text-[#3B82F6] transition-colors cursor-pointer"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
-                                    <button class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-blue-100 text-[#3B82F6] bg-blue-50 transition-colors cursor-pointer"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+                                    <button
+                                        class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-blue-50 text-[#3B82F6] transition-colors cursor-pointer"><i
+                                            data-lucide="chevron-left" class="w-5 h-5"></i></button>
+                                    <button
+                                        class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-blue-100 text-[#3B82F6] bg-blue-50 transition-colors cursor-pointer"><i
+                                            data-lucide="chevron-right" class="w-5 h-5"></i></button>
                                 </div>
                             </div>
-                            
+
                             <!-- Grid Days -->
-                            <div class="grid grid-cols-7 gap-y-4 gap-x-2 text-center text-[11px] font-bold text-slate-400 mb-2 mt-4">
-                                <div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div><div>SUN</div>
+                            <div
+                                class="grid grid-cols-7 gap-y-4 gap-x-2 text-center text-[11px] font-bold text-slate-400 mb-2 mt-4">
+                                <div>MON</div>
+                                <div>TUE</div>
+                                <div>WED</div>
+                                <div>THU</div>
+                                <div>FRI</div>
+                                <div>SAT</div>
+                                <div>SUN</div>
                             </div>
-                            
+
                             <!-- Calendar Numbers -->
-                            <div class="grid grid-cols-7 gap-y-2 gap-x-1 sm:gap-x-2 text-center text-[14px] font-bold text-dark mb-8">
+                            <div
+                                class="grid grid-cols-7 gap-y-2 gap-x-1 sm:gap-x-2 text-center text-[14px] font-bold text-dark mb-8">
                                 <div class="py-2.5 text-slate-300">30</div>
                                 <div class="py-2.5 text-slate-300">31</div>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center bg-blue-50 text-[#3B82F6] transition-colors cursor-pointer date-btn">1</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">2</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">3</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">4</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative"><div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>5</button>
-                                
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative"><div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>6</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative"><div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>7</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">8</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">9</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">10</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">11</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">12</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">13</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">14</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">15</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">16</button>
-                                <button class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative"><div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>17</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center bg-blue-50 text-[#3B82F6] transition-colors cursor-pointer date-btn">1</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">2</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">3</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">4</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative">
+                                    <div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>5
+                                </button>
+
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative">
+                                    <div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>6
+                                </button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative">
+                                    <div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>7
+                                </button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">8</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">9</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">10</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">11</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">12</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">13</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">14</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">15</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn">16</button>
+                                <button
+                                    class="w-10 h-10 sm:w-11 sm:h-11 rounded-full mx-auto flex items-center justify-center hover:bg-blue-50 hover:text-[#3B82F6] transition-colors cursor-pointer date-btn relative">
+                                    <div class="absolute bottom-[3px] w-1 h-1 bg-slate-300 rounded-full"></div>17
+                                </button>
                             </div>
-                            
+
                             <!-- Timezone -->
-                            <div class="flex items-center gap-2 mt-auto text-dark font-medium cursor-pointer hover:underline w-max pt-4 border-t border-slate-100">
+                            <div
+                                class="flex items-center gap-2 mt-auto text-dark font-medium cursor-pointer hover:underline w-max pt-4 border-t border-slate-100">
                                 <i data-lucide="globe" class="w-4 h-4 text-slate-500"></i>
                                 <span class="text-[14px]">India Standard Time (11:00)</span>
                                 <i data-lucide="chevron-down" class="w-3 h-3 text-slate-500 pt-0.5"></i>
@@ -933,15 +1572,25 @@
                         </div>
 
                         <!-- Right Time Slots View (Hidden Initially) -->
-                        <div id="time-slots-container" class="w-[180px] shrink-0 hidden opacity-0 transition-opacity duration-300 flex-col h-full border-l border-slate-100 pl-4 lg:pl-6 -mt-2">
-                            <h4 class="font-bold text-dark text-[14px] mb-4 mt-2" id="time-slot-day-title">Tuesday, 6 April</h4>
+                        <div id="time-slots-container"
+                            class="w-[180px] shrink-0 hidden opacity-0 transition-opacity duration-300 flex-col h-full border-l border-slate-100 pl-4 lg:pl-6 -mt-2">
+                            <h4 class="font-bold text-dark text-[14px] mb-4 mt-2" id="time-slot-day-title">Tuesday, 6
+                                April</h4>
                             <div class="flex flex-col gap-3 overflow-y-auto max-h-[290px] pr-2 custom-scrollbar">
-                                <button class="w-full border border-slate-200 bg-white text-[#3B82F6] font-[800] text-[14px] py-3.5 rounded-lg hover:border-[#3B82F6] transition-all cursor-pointer time-btn shadow-sm">10:00 AM</button>
-                                <button class="w-full border border-slate-200 bg-white text-[#3B82F6] font-[800] text-[14px] py-3.5 rounded-lg hover:border-[#3B82F6] transition-all cursor-pointer time-btn shadow-sm">12:00 PM</button>
-                                <button class="w-full border border-slate-200 bg-white text-[#3B82F6] font-[800] text-[14px] py-3.5 rounded-lg hover:border-[#3B82F6] transition-all cursor-pointer time-btn shadow-sm">4:00 PM</button>
+                                <button
+                                    class="w-full border border-slate-200 bg-white text-[#3B82F6] font-[800] text-[14px] py-3.5 rounded-lg hover:border-[#3B82F6] transition-all cursor-pointer time-btn shadow-sm">10:00
+                                    AM</button>
+                                <button
+                                    class="w-full border border-slate-200 bg-white text-[#3B82F6] font-[800] text-[14px] py-3.5 rounded-lg hover:border-[#3B82F6] transition-all cursor-pointer time-btn shadow-sm">12:00
+                                    PM</button>
+                                <button
+                                    class="w-full border border-slate-200 bg-white text-[#3B82F6] font-[800] text-[14px] py-3.5 rounded-lg hover:border-[#3B82F6] transition-all cursor-pointer time-btn shadow-sm">4:00
+                                    PM</button>
                             </div>
-                            <div id="confirm-booking-wrapper" class="hidden opacity-0 transition-opacity duration-300 mt-5 pt-3 border-t border-slate-100 w-full">
-                                <button id="confirm-booking-btn" class="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold text-[14px] py-3.5 rounded-lg shadow-[0_4px_14px_rgba(59,130,246,0.3)] transition-colors cursor-pointer">Confirm</button>
+                            <div id="confirm-booking-wrapper"
+                                class="hidden opacity-0 transition-opacity duration-300 mt-5 pt-3 border-t border-slate-100 w-full">
+                                <button id="confirm-booking-btn"
+                                    class="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold text-[14px] py-3.5 rounded-lg shadow-[0_4px_14px_rgba(59,130,246,0.3)] transition-colors cursor-pointer">Confirm</button>
                             </div>
                         </div>
                     </div>
@@ -949,20 +1598,28 @@
             </div>
 
             <!-- Step 3 (Success) -->
-            <div id="demo-step-3" class="flex flex-col w-full h-[550px] hidden opacity-0 transition-opacity duration-500 items-center justify-center px-8 text-center bg-white relative overflow-hidden">
+            <div id="demo-step-3"
+                class="flex flex-col w-full h-[550px] hidden opacity-0 transition-opacity duration-500 items-center justify-center px-8 text-center bg-white relative overflow-hidden">
                 <!-- Confetti/Light blobs -->
-                <div class="w-64 h-64 bg-green-100 rounded-full absolute -top-10 -right-20 blur-[60px] opacity-70 pointer-events-none"></div>
-                <div class="w-64 h-64 bg-blue-100 rounded-full absolute -bottom-10 -left-20 blur-[60px] opacity-70 pointer-events-none"></div>
-                
+                <div
+                    class="w-64 h-64 bg-green-100 rounded-full absolute -top-10 -right-20 blur-[60px] opacity-70 pointer-events-none">
+                </div>
+                <div
+                    class="w-64 h-64 bg-blue-100 rounded-full absolute -bottom-10 -left-20 blur-[60px] opacity-70 pointer-events-none">
+                </div>
+
                 <div class="relative z-10 flex flex-col items-center">
-                    <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center text-green-500 mb-6 mx-auto shadow-sm shadow-green-100 border border-green-100">
+                    <div
+                        class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center text-green-500 mb-6 mx-auto shadow-sm shadow-green-100 border border-green-100">
                         <i data-lucide="check-circle-2" class="w-10 h-10"></i>
                     </div>
                     <h2 class="text-[32px] font-black text-dark mb-4 leading-tight">Your demo is booked 🎉</h2>
                     <p class="text-[16px] font-medium text-slate-500 max-w-[450px] mx-auto mb-10 leading-relaxed">
-                        We've sent a calendar invitation directly to your email. Please check your inbox for the Google Meet link and details.
+                        We've sent a calendar invitation directly to your email. Please check your inbox for the Google
+                        Meet link and details.
                     </p>
-                    <button id="close-success-btn" class="bg-dark hover:bg-slate-800 text-white font-bold text-lg py-4 px-12 rounded-xl transition-all shadow-floating cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <button id="close-success-btn"
+                        class="bg-dark hover:bg-slate-800 text-white font-bold text-lg py-4 px-12 rounded-xl transition-all shadow-floating cursor-pointer hover:shadow-2xl hover:-translate-y-1">
                         Back to site
                     </button>
                 </div>
@@ -974,41 +1631,54 @@
     <!-- Floating AI Chat Widget -->
     <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
         <!-- Chat Widget Panel -->
-        <div id="ai-chat-panel" class="w-[340px] bg-white rounded-[16px] shadow-[0_10px_40px_rgba(0,0,0,0.15)] border border-slate-100 mb-4 opacity-0 invisible translate-y-4 transition-all duration-300 origin-bottom-right overflow-hidden flex flex-col">
-            
+        <div id="ai-chat-panel"
+            class="w-[340px] bg-white rounded-[16px] shadow-[0_10px_40px_rgba(0,0,0,0.15)] border border-slate-100 mb-4 opacity-0 invisible translate-y-4 transition-all duration-300 origin-bottom-right overflow-hidden flex flex-col">
+
             <!-- Header (Green Gradient) -->
             <div class="bg-gradient-to-br from-[#1EBE57] to-[#075E54] p-6 pb-12 relative">
-                <button id="close-ai-chat" class="absolute top-4 right-4 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <button id="close-ai-chat"
+                    class="absolute top-4 right-4 text-white/80 hover:text-white transition-colors cursor-pointer">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
                 <div class="flex items-center gap-3 mb-2">
                     <h3 class="text-white font-bold text-[22px]">Hi there 👋</h3>
                 </div>
-                <p class="text-white/90 text-[13.5px] leading-snug mb-5 font-medium">Explore Docs, News or Chat with us to get started.</p>
+                <p class="text-white/90 text-[13.5px] leading-snug mb-5 font-medium">Explore Docs, News or Chat with us
+                    to get started.</p>
                 <!-- 3 avatars -->
                 <div class="flex -space-x-3">
-                    <img src="https://ui-avatars.com/api/?name=Sarah&background=random" class="w-9 h-9 rounded-full border-2 border-[#1EBE57]">
-                    <img src="https://ui-avatars.com/api/?name=Alex&background=random" class="w-9 h-9 rounded-full border-2 border-[#1EBE57]">
-                    <img src="https://ui-avatars.com/api/?name=AI&background=random" class="w-9 h-9 rounded-full border-2 border-[#1EBE57]">
+                    <img src="https://ui-avatars.com/api/?name=Sarah&background=random"
+                        class="w-9 h-9 rounded-full border-2 border-[#1EBE57]">
+                    <img src="https://ui-avatars.com/api/?name=Alex&background=random"
+                        class="w-9 h-9 rounded-full border-2 border-[#1EBE57]">
+                    <img src="https://ui-avatars.com/api/?name=AI&background=random"
+                        class="w-9 h-9 rounded-full border-2 border-[#1EBE57]">
                 </div>
             </div>
 
             <!-- Content Area -->
             <div class="p-4 flex-grow bg-[#F8FAFC] relative">
                 <!-- Floating Preview Card -->
-                <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-4 -mt-12 relative z-10 mb-4 cursor-pointer hover:shadow-md transition-all">
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-slate-100 p-4 -mt-12 relative z-10 mb-4 cursor-pointer hover:shadow-md transition-all">
                     <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-[10px] uppercase font-bold tracking-wider">News</span>
+                        <span
+                            class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-[10px] uppercase font-bold tracking-wider">News</span>
                         <span class="text-[11px] text-slate-400 font-medium">Just now</span>
                     </div>
-                    <h4 class="text-[14px] font-bold text-dark leading-tight mb-1.5">Template Message Journey is now live 🚀</h4>
-                    <p class="text-[12px] text-grayTxt leading-snug">Automate entire drip campaigns via WhatsApp API easily.</p>
+                    <h4 class="text-[14px] font-bold text-dark leading-tight mb-1.5">Template Message Journey is now
+                        live 🚀</h4>
+                    <p class="text-[12px] text-grayTxt leading-snug">Automate entire drip campaigns via WhatsApp API
+                        easily.</p>
                 </div>
 
                 <!-- Input area -->
-                <div class="bg-white rounded-xl shadow-sm border border-slate-100 flex items-center justify-between mb-3 mt-4 overflow-hidden">
-                    <input type="text" placeholder="Ask a question..." class="flex-grow bg-transparent border-none text-[13px] px-4 py-3 focus:ring-0 outline-none text-dark placeholder:text-slate-400">
-                    <button class="w-[38px] h-[38px] rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center hover:bg-whatsapp hover:text-white transition-colors cursor-pointer shrink-0 mr-1.5">
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-slate-100 flex items-center justify-between mb-3 mt-4 overflow-hidden">
+                    <input type="text" placeholder="Ask a question..."
+                        class="flex-grow bg-transparent border-none text-[13px] px-4 py-3 focus:ring-0 outline-none text-dark placeholder:text-slate-400">
+                    <button
+                        class="w-[38px] h-[38px] rounded-lg bg-whatsapp/10 text-whatsapp flex items-center justify-center hover:bg-whatsapp hover:text-white transition-colors cursor-pointer shrink-0 mr-1.5">
                         <i data-lucide="send" class="w-[18px] h-[18px]"></i>
                     </button>
                 </div>
@@ -1017,15 +1687,18 @@
 
             <!-- Footer Nav -->
             <div class="bg-white border-t border-slate-100 p-1 flex justify-evenly items-center">
-                <button class="flex flex-col items-center justify-center gap-1 text-whatsapp w-full py-3 cursor-pointer transition-colors">
+                <button
+                    class="flex flex-col items-center justify-center gap-1 text-whatsapp w-full py-3 cursor-pointer transition-colors">
                     <i data-lucide="home" class="w-[18px] h-[18px]"></i>
                     <span class="text-[11px] font-bold">Home</span>
                 </button>
-                <button class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-dark transition-colors w-full py-3 cursor-pointer">
+                <button
+                    class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-dark transition-colors w-full py-3 cursor-pointer">
                     <i data-lucide="message-square" class="w-[18px] h-[18px]"></i>
                     <span class="text-[11px] font-medium">Messages</span>
                 </button>
-                <button class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-dark transition-colors w-full py-3 cursor-pointer relative">
+                <button
+                    class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-dark transition-colors w-full py-3 cursor-pointer relative">
                     <div class="absolute top-[8px] right-[38px] w-[7px] h-[7px] bg-red-500 rounded-full"></div>
                     <i data-lucide="zap" class="w-[18px] h-[18px]"></i>
                     <span class="text-[11px] font-medium">News</span>
@@ -1034,9 +1707,12 @@
         </div>
 
         <!-- Toggle Button (Floating Bounce) -->
-        <button id="ai-chat-btn" class="w-[60px] h-[60px] bg-whatsapp text-white rounded-full shadow-floating flex items-center justify-center hover:scale-105 transition-all duration-300 cursor-pointer hover:shadow-[0_10px_30px_rgba(37,211,102,0.4)] animate-[bounce_3s_infinite]">
-            <span id="ai-chat-icon-open" class="flex"><i data-lucide="message-square-text" class="w-[28px] h-[28px] fill-current"></i></span>
-            <span id="ai-chat-icon-close" class="hidden"><i data-lucide="chevron-down" class="w-[28px] h-[28px]"></i></span>
+        <button id="ai-chat-btn"
+            class="w-[60px] h-[60px] bg-whatsapp text-white rounded-full shadow-floating flex items-center justify-center hover:scale-105 transition-all duration-300 cursor-pointer hover:shadow-[0_10px_30px_rgba(37,211,102,0.4)] animate-[bounce_3s_infinite]">
+            <span id="ai-chat-icon-open" class="flex"><i data-lucide="message-square-text"
+                    class="w-[28px] h-[28px] fill-current"></i></span>
+            <span id="ai-chat-icon-close" class="hidden"><i data-lucide="chevron-down"
+                    class="w-[28px] h-[28px]"></i></span>
         </button>
     </div>
 
@@ -1045,14 +1721,58 @@
         // Init Lucide Icons
         lucide.createIcons();
 
-        // Mobile Menu Toggle
-        const btn = document.getElementById('mobile-menu-btn');
-        // Simple alert for mockup purposes since dropdown wasn't fully mocked for mobile
-        if(btn) {
-            btn.addEventListener('click', () => {
-                alert('Mobile menu toggled');
+        // Mobile Menu Toggle logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileIcon = mobileBtn ? mobileBtn.querySelector('i') : null;
+        
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                const isClosed = mobileMenu.classList.contains('translate-x-full');
+                if (isClosed) {
+                    mobileMenu.classList.remove('translate-x-full');
+                    mobileMenu.classList.add('translate-x-0');
+                    if (mobileIcon) {
+                        mobileIcon.setAttribute('data-lucide', 'x');
+                        lucide.createIcons();
+                    }
+                    document.body.style.overflow = 'hidden'; // prevent bg scroll
+                } else {
+                    mobileMenu.classList.add('translate-x-full');
+                    mobileMenu.classList.remove('translate-x-0');
+                    if (mobileIcon) {
+                        mobileIcon.setAttribute('data-lucide', 'menu');
+                        lucide.createIcons();
+                    }
+                    document.body.style.overflow = 'auto'; // restore scroll
+                }
             });
         }
+
+        // Mobile Accordion Logic
+        const accordionBtns = document.querySelectorAll('.accordion-btn');
+        accordionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+                
+                // Close all others first
+                document.querySelectorAll('.accordion-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('flex'));
+                document.querySelectorAll('.accordion-btn i').forEach(i => i.style.transform = 'rotate(0deg)');
+                
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    content.classList.add('flex');
+                    if(icon) icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    content.classList.remove('flex');
+                    if(icon) icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
 
         // Navbar blur on scroll
         const navbar = document.getElementById('navbar');
@@ -1079,7 +1799,7 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); 
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
@@ -1096,26 +1816,26 @@
         const iconClose = document.getElementById('ai-chat-icon-close');
 
         function toggleAiChat() {
-            if(!aiChatPanel) return;
+            if (!aiChatPanel) return;
             const isClosed = aiChatPanel.classList.contains('opacity-0');
-            if(isClosed) {
+            if (isClosed) {
                 // Open panel
                 aiChatPanel.classList.remove('opacity-0', 'invisible', 'translate-y-4');
                 aiChatPanel.classList.add('opacity-100', 'visible', 'translate-y-0');
-                
+
                 // Toggle Icon
                 iconOpen.classList.add('hidden');
                 iconOpen.classList.remove('flex');
                 iconClose.classList.add('flex');
                 iconClose.classList.remove('hidden');
-                
+
                 // Stop bounce
                 aiChatBtn.classList.remove('animate-[bounce_3s_infinite]');
             } else {
                 // Close panel
                 aiChatPanel.classList.add('opacity-0', 'invisible', 'translate-y-4');
                 aiChatPanel.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                
+
                 // Toggle Icon
                 iconClose.classList.add('hidden');
                 iconClose.classList.remove('flex');
@@ -1124,8 +1844,8 @@
             }
         }
 
-        if(aiChatBtn) aiChatBtn.addEventListener('click', toggleAiChat);
-        if(closeAiChatBtn) closeAiChatBtn.addEventListener('click', toggleAiChat);
+        if (aiChatBtn) aiChatBtn.addEventListener('click', toggleAiChat);
+        if (closeAiChatBtn) closeAiChatBtn.addEventListener('click', toggleAiChat);
 
         // Live Demo Modal Logic
         const demoTriggers = document.querySelectorAll('.demo-modal-trigger');
@@ -1136,7 +1856,7 @@
         function openDemoModal() {
             demoBackdrop.classList.remove('opacity-0', 'invisible');
             demoBackdrop.classList.add('opacity-100', 'visible');
-            
+
             setTimeout(() => {
                 demoModalBox.classList.remove('scale-95', 'opacity-0');
                 demoModalBox.classList.add('scale-100', 'opacity-100');
@@ -1146,7 +1866,7 @@
         function closeDemoModalFunc() {
             demoModalBox.classList.remove('scale-100', 'opacity-100');
             demoModalBox.classList.add('scale-95', 'opacity-0');
-            
+
             setTimeout(() => {
                 demoBackdrop.classList.remove('opacity-100', 'visible');
                 demoBackdrop.classList.add('opacity-0', 'invisible');
@@ -1160,10 +1880,10 @@
             });
         });
 
-        if(closeDemoModal) closeDemoModal.addEventListener('click', closeDemoModalFunc);
-        if(demoBackdrop) {
+        if (closeDemoModal) closeDemoModal.addEventListener('click', closeDemoModalFunc);
+        if (demoBackdrop) {
             demoBackdrop.addEventListener('click', (e) => {
-                if(e.target === demoBackdrop) {
+                if (e.target === demoBackdrop) {
                     closeDemoModalFunc();
                 }
             });
@@ -1177,11 +1897,11 @@
         const selectedLangTime = document.getElementById('selected-lang-time');
         const langOptionBtns = document.querySelectorAll('.lang-option');
 
-        if(langDropdownBtn) {
+        if (langDropdownBtn) {
             langDropdownBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const isClosed = langOptions.classList.contains('opacity-0');
-                if(isClosed) {
+                if (isClosed) {
                     langOptions.classList.remove('opacity-0', 'invisible', 'translate-y-2');
                     langIcon.style.transform = 'rotate(180deg)';
                 } else {
@@ -1200,11 +1920,11 @@
                 langIcon.style.transform = 'rotate(0deg)';
             });
         });
-        
+
         // Close dropdown when typing outside
         document.addEventListener('click', (e) => {
-            if(langDropdownBtn && langOptions) {
-                if(!langDropdownBtn.contains(e.target) && !langOptions.contains(e.target)) {
+            if (langDropdownBtn && langOptions) {
+                if (!langDropdownBtn.contains(e.target) && !langOptions.contains(e.target)) {
                     langOptions.classList.add('opacity-0', 'invisible', 'translate-y-2');
                     langIcon.style.transform = 'rotate(0deg)';
                 }
@@ -1216,14 +1936,14 @@
         const step2 = document.getElementById('demo-step-2');
         const submitToStep2 = document.getElementById('demo-step-1-submit');
 
-        if(submitToStep2) {
+        if (submitToStep2) {
             submitToStep2.addEventListener('click', () => {
                 // Fade out Step 1
                 step1.classList.add('opacity-0');
                 setTimeout(() => {
                     step1.classList.add('hidden');
                     step2.classList.remove('hidden');
-                    
+
                     setTimeout(() => {
                         step2.classList.remove('opacity-0');
                         lucide.createIcons(); // refresh rendering of step 2 icons
@@ -1231,16 +1951,16 @@
                 }, 300);
             });
         }
-        
+
         // Add reset event listener after Modal close
-        if(closeDemoModal) {
+        if (closeDemoModal) {
             closeDemoModal.addEventListener('click', () => {
                 setTimeout(() => {
-                    if(step2 && !step2.classList.contains('hidden')) {
-                         step2.classList.add('hidden', 'opacity-0');
-                         step1.classList.remove('hidden');
-                         // small delay so opacity transition works without flash
-                         setTimeout(() => step1.classList.remove('opacity-0'), 10);
+                    if (step2 && !step2.classList.contains('hidden')) {
+                        step2.classList.add('hidden', 'opacity-0');
+                        step1.classList.remove('hidden');
+                        // small delay so opacity transition works without flash
+                        setTimeout(() => step1.classList.remove('opacity-0'), 10);
                     }
                 }, 400); // Trigger after modal fully closes
             });
@@ -1269,15 +1989,15 @@
                 // Set active
                 btn.classList.add('text-white', 'bg-[#3B82F6]', 'hover:bg-[#2563EB]', 'shadow-sm', 'shadow-blue-500/50');
                 btn.classList.remove('hover:bg-blue-50', 'hover:text-[#3B82F6]');
-                
+
                 // Show Times
                 timeSlotsContainer.classList.remove('hidden');
                 setTimeout(() => timeSlotsContainer.classList.remove('opacity-0'), 50);
-                
+
                 // Update Date Text
                 const selectedDay = btn.textContent.replace(/[^0-9]/g, '');
                 timeSlotDayTitle.textContent = "April " + selectedDay + ", 2026";
-                
+
                 // Reset times + confirm btn
                 timeBtns.forEach(t => {
                     t.classList.remove('bg-[#3B82F6]', 'text-white', 'border-[#3B82F6]');
@@ -1296,11 +2016,11 @@
                     t.classList.remove('bg-[#3B82F6]', 'text-white', 'border-[#3B82F6]');
                     t.classList.add('bg-white', 'text-[#3B82F6]', 'border-slate-200');
                 });
-                
+
                 // Set active
                 btn.classList.remove('bg-white', 'text-[#3B82F6]', 'border-slate-200');
                 btn.classList.add('bg-[#3B82F6]', 'text-white', 'border-[#3B82F6]');
-                
+
                 // Show Confirm Button
                 confirmBookingWrapper.classList.remove('hidden');
                 setTimeout(() => confirmBookingWrapper.classList.remove('opacity-0'), 50);
@@ -1308,14 +2028,14 @@
         });
 
         // Confirm
-        if(confirmBookingBtn) {
+        if (confirmBookingBtn) {
             confirmBookingBtn.addEventListener('click', () => {
                 // Fade out step 2
                 step2.classList.add('opacity-0');
                 setTimeout(() => {
                     step2.classList.add('hidden');
                     demoStep3.classList.remove('hidden');
-                    
+
                     setTimeout(() => {
                         demoStep3.classList.remove('opacity-0');
                         lucide.createIcons();
@@ -1323,28 +2043,29 @@
                 }, 300);
             });
         }
-        
+
         // Close from Success
-        if(closeSuccessBtn) {
+        if (closeSuccessBtn) {
             closeSuccessBtn.addEventListener('click', () => {
                 closeDemoModalFunc();
             });
         }
-        
+
         // Add to main reset logic
-        if(closeDemoModal) {
+        if (closeDemoModal) {
             closeDemoModal.addEventListener('click', () => {
                 setTimeout(() => {
-                    if(demoStep3 && !demoStep3.classList.contains('hidden')) {
+                    if (demoStep3 && !demoStep3.classList.contains('hidden')) {
                         demoStep3.classList.add('hidden', 'opacity-0');
                     }
-                    if(timeSlotsContainer && !timeSlotsContainer.classList.contains('hidden')) {
+                    if (timeSlotsContainer && !timeSlotsContainer.classList.contains('hidden')) {
                         timeSlotsContainer.classList.add('hidden', 'opacity-0');
                     }
-                }, 400); 
+                }, 400);
             });
         }
 
     </script>
 </body>
+
 </html>
